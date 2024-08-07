@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:horizon/core/models/svg_model.dart';
+import 'package:horizon/core/widgets/custom_svg_picture.dart';
 import 'package:horizon/features/dashboard/data/models/drawer_item_model.dart';
 
 import '../../../../core/utils/styles.dart';
@@ -12,9 +13,9 @@ class ActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: const EdgeInsets.only(right: 0, left: 20),
-      leading: SvgPicture.asset(drawerItemModel.image,
-          colorFilter:
-              const ColorFilter.mode(Color(0xff4318FF), BlendMode.srcIn)),
+      leading: CustomSvgPicture(
+          svg: SvgModel(
+              color: const Color(0xff4318FF), image: drawerItemModel.image)),
       title: Text(drawerItemModel.title, style: Styles.bold16(context)),
       trailing: Container(
           height: 36,
@@ -33,9 +34,9 @@ class InActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
         contentPadding: const EdgeInsets.only(right: 0, left: 20),
-        leading: SvgPicture.asset(drawerItemModel.image,
-            colorFilter:
-                const ColorFilter.mode(Color(0xffA3AED0), BlendMode.srcIn)),
+        leading: CustomSvgPicture(
+            svg: SvgModel(
+                color: const Color(0xffA3AED0), image: drawerItemModel.image)),
         title: Text(drawerItemModel.title, style: Styles.medium16(context)));
   }
 }

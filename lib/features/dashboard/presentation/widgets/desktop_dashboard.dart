@@ -11,7 +11,6 @@ class DesktopDashboard extends StatelessWidget {
     return const Row(
       children: [
         CustomDrawer(),
-        SizedBox(width: 24),
         Expanded(child: MainDashboard()),
       ],
     );

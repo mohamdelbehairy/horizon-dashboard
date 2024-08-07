@@ -1,6 +1,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAmerica
+  /// assets/images/america.png
+  static const String imagesAmerica = "assets/images/america.png";
+
   /// Assets for imagesDarkMode
   /// assets/images/dark_mode.svg
   static const String imagesDarkMode = "assets/images/dark_mode.svg";
@@ -8,6 +12,14 @@ class Assets {
   /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";
+
+  /// Assets for imagesDoller
+  /// assets/images/doller.svg
+  static const String imagesDoller = "assets/images/doller.svg";
+
+  /// Assets for imagesFiles
+  /// assets/images/files.svg
+  static const String imagesFiles = "assets/images/files.svg";
 
   /// Assets for imagesKanban
   /// assets/images/kanban.svg
@@ -20,6 +32,10 @@ class Assets {
   /// Assets for imagesMarket
   /// assets/images/market.svg
   static const String imagesMarket = "assets/images/market.svg";
+
+  /// Assets for imagesNewTask
+  /// assets/images/new_task.svg
+  static const String imagesNewTask = "assets/images/new_task.svg";
 
   /// Assets for imagesNotification
   /// assets/images/notification.svg
