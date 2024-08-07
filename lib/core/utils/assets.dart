@@ -24,5 +24,9 @@ class Assets {
   /// Assets for imagesTables
   /// assets/images/tables.svg
   static const String imagesTables = "assets/images/tables.svg";
+
+  /// Assets for imagesUpgradeToPro
+  /// assets/images/upgrade_to_pro.svg
+  static const String imagesUpgradeToPro = "assets/images/upgrade_to_pro.svg";
 }
 
