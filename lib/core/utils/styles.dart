@@ -65,6 +65,14 @@ class Styles {
         fontFamily: 'DM Sans');
   }
 
+  static TextStyle regular14(BuildContext context) {
+    return const TextStyle(
+        fontSize: 14,
+        color: Color(0xff8F9BBA),
+        fontWeight: FontWeight.w400,
+        fontFamily: 'DM Sans');
+  }
+
   static TextStyle bold14(BuildContext context) {
     return const TextStyle(
         fontSize: 14,

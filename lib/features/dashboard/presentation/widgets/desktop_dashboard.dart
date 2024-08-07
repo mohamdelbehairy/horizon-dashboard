@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'custom_drawer.dart';
+import 'main_dashboard.dart';
 
 class DesktopDashboard extends StatelessWidget {
   const DesktopDashboard({super.key});
@@ -10,6 +11,8 @@ class DesktopDashboard extends StatelessWidget {
     return const Row(
       children: [
         CustomDrawer(),
+        SizedBox(width: 24),
+        Expanded(child: MainDashboard()),
       ],
     );
   }
