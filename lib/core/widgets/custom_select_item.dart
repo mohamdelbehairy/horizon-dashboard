@@ -39,14 +39,10 @@ class _CustomSelectItemState extends State<CustomSelectItem> {
         if (widget.text != null)
           SizedBox(width: MediaQuery.sizeOf(context).width > 1360 ? 14 : 1),
         if (widget.text != null)
-          Flexible(
-            child: FittedBox(
-                fit: BoxFit.scaleDown,
-                child: Text(widget.text!,
-                    style: isActive
-                        ? Styles.bold16(context)
-                        : Styles.medium14(context))),
-          )
+          Text(widget.text!,
+              style: isActive
+                  ? Styles.bold16(context)
+                  : Styles.medium14(context))
       ],
     );
   }

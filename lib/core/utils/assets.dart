@@ -5,6 +5,10 @@ class Assets {
   /// assets/images/america.png
   static const String imagesAmerica = "assets/images/america.png";
 
+  /// Assets for imagesAssigned
+  /// assets/images/Assigned.png
+  static const String imagesAssigned = "assets/images/Assigned.png";
+
   /// Assets for imagesBarChart
   /// assets/images/bar_chart.png
   static const String imagesBarChart = "assets/images/bar_chart.png";
@@ -40,6 +44,14 @@ class Assets {
   /// Assets for imagesFiles
   /// assets/images/files.svg
   static const String imagesFiles = "assets/images/files.svg";
+
+  /// Assets for imagesFinger
+  /// assets/images/finger.svg
+  static const String imagesFinger = "assets/images/finger.svg";
+
+  /// Assets for imagesFires
+  /// assets/images/fires.svg
+  static const String imagesFires = "assets/images/fires.svg";
 
   /// Assets for imagesKanban
   /// assets/images/kanban.svg
@@ -97,6 +109,10 @@ class Assets {
   /// assets/images/signin.svg
   static const String imagesSignin = "assets/images/signin.svg";
 
+  /// Assets for imagesSlowMotionVideo
+  /// assets/images/slow_motion_video.svg
+  static const String imagesSlowMotionVideo = "assets/images/slow_motion_video.svg";
+
   /// Assets for imagesTables
   /// assets/images/tables.svg
   static const String imagesTables = "assets/images/tables.svg";
@@ -104,6 +120,10 @@ class Assets {
   /// Assets for imagesTaskIcon
   /// assets/images/task_icon.svg
   static const String imagesTaskIcon = "assets/images/task_icon.svg";
+
+  /// Assets for imagesTimer
+  /// assets/images/timer.svg
+  static const String imagesTimer = "assets/images/timer.svg";
 
   /// Assets for imagesTopLine
   /// assets/images/top_line.svg

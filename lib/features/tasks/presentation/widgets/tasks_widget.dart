@@ -37,7 +37,11 @@ class TasksWidget extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CustomSelectItem(text: items[index]),
+                    Flexible(
+                      child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: CustomSelectItem(text: items[index])),
+                    ),
                     CustomSvgPicture(
                         svg: SvgModel(
                             image: Assets.imagesTaskIcon,

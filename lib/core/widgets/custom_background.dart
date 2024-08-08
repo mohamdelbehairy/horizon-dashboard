@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 
 class CustomBackground extends StatelessWidget {
   const CustomBackground(
-      {super.key, required this.child, this.left, this.right});
+      {super.key, required this.child, this.left, this.right, this.bottom});
   final Widget child;
-  final double? left, right;
+  final double? left, right, bottom;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 350,
       padding: EdgeInsets.only(
-          left: MediaQuery.sizeOf(context).width > 1225 ? left ?? 32 : 16,
-          right: MediaQuery.sizeOf(context).width > 1225 ? right ?? 32 : 16,
-          top: 32,
-          bottom: 12),
+          left: left ?? 32, right: right ?? 32, top: 32, bottom: bottom ?? 12),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),
       child: child,
