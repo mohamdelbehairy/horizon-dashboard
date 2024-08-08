@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:horizon/features/tasks/presentation/widgets/dates_widget.dart';
+
 import '../../../tasks/presentation/widgets/tasks_widget.dart';
 import 'complex_table_widget.dart';
 
@@ -17,7 +19,7 @@ class ComplexTableAndTasksSection extends StatelessWidget {
           children: [
             Expanded(child: TasksWidget()),
             SizedBox(width: 16),
-            Expanded(child: TasksWidget()),
+            Expanded(child: DatesWidget()),
           ],
         ))
       ],
