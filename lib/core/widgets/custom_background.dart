@@ -9,7 +9,7 @@ class CustomBackground extends StatelessWidget {
     return Container(
       height: 350,
       padding: EdgeInsets.only(
-          left: 32,
+          left: MediaQuery.sizeOf(context).width > 1225 ? 32 : 16,
           right: MediaQuery.sizeOf(context).width > 1225 ? 32 : 16,
           top: 32,
           bottom: 12),
