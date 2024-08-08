@@ -7,7 +7,12 @@ class CustomBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 32, right: 32, top: 32, bottom: 12),
+      height: 350,
+      padding: EdgeInsets.only(
+          left: 32,
+          right: MediaQuery.sizeOf(context).width > 1225 ? 32 : 16,
+          top: 32,
+          bottom: 12),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),
       child: child,

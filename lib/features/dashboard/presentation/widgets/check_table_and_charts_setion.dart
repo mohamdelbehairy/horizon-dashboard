@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../charts/presentation/widgets/my_pie_chart.dart';
 import '../../../check_table/presentation/widgets/check_table_widget.dart';
 
 class CheckTableAndChartsSection extends StatelessWidget {
@@ -7,11 +8,18 @@ class CheckTableAndChartsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        const Expanded(child: CheckTableWidget()),
-        const SizedBox(width: 16),
-        Expanded(child: Container())
+        Expanded(child: CheckTableWidget()),
+        SizedBox(width: 16),
+        Expanded(
+            child: Row(
+          children: [
+            Expanded(child: MyPieChart()),
+            SizedBox(width: 16),
+            Expanded(child: MyPieChart())
+          ],
+        ))
       ],
     );
   }
