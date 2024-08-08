@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/styles.dart';
-import 'checktable_select_and_unselect_item.dart';
+import 'check_table_select_and_unselect_item.dart';
 
 class CheckTableName extends StatelessWidget {
   const CheckTableName({super.key});
 
   @override
   Widget build(BuildContext context) {
-      List items = [
-    'Horizon UI PRO',
-    'Horizon UI Free',
-    'Weekly Update',
-    'Venus 3D Asset',
-    'Marketplace'
-  ];
+    List items = [
+      'Horizon UI PRO',
+      'Horizon UI Free',
+      'Weekly Update',
+      'Venus 3D Asset',
+      'Marketplace'
+    ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
