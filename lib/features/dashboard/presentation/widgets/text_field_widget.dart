@@ -12,7 +12,7 @@ class TextFieldWidget extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.only(top: 4, bottom: 4, left: 8, right: 4),
         decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(30)),
+            color: Colors.white, borderRadius: BorderRadius.circular(60)),
         child: const Row(
           children: [
             Expanded(child: CustomTextField()),

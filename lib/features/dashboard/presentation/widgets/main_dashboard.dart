@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:horizon/core/utils/styles.dart';
 
 import '../../../../core/widgets/dashboard_title_section.dart';
+import 'check_table_and_charts_setion.dart';
 import 'main_dashboard_list_view.dart';
 
 class MainDashboard extends StatelessWidget {
@@ -23,6 +24,8 @@ class MainDashboard extends StatelessWidget {
                 const DashboardTitleSection(),
                 const SizedBox(height: 16),
                 const MainDashboardListView(),
+                const SizedBox(height: 24),
+                const CheckTableAndChartsSection()
               ],
             ),
           ),

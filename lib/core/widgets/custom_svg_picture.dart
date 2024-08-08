@@ -13,6 +13,7 @@ class CustomSvgPicture extends StatelessWidget {
         colorFilter: svg.color != null
             ? ColorFilter.mode(svg.color!, BlendMode.srcIn)
             : null,
-        fit: svg.fit);
+        fit: svg.fit,
+        height: svg.hight);
   }
 }

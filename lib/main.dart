@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:horizon/features/dashboard/presentation/views/dashboard_view.dart';
 
 void main() {
+  // CachedSvg.svgPrecacheImage();
   runApp(const Horizon());
 }
 
