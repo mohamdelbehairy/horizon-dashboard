@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/styles.dart';
-import 'check_table_select_and_unselect_item.dart';
+import '../../../../core/widgets/custom_select_item.dart';
 
 class CheckTableName extends StatelessWidget {
   const CheckTableName({super.key});
@@ -27,7 +27,7 @@ class CheckTableName extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 20),
               child: Row(
                 children: [
-                  const CheckTableSelectItem(),
+                  const CustomSelectItem(),
                   const SizedBox(width: 12),
                   FittedBox(
                       fit: BoxFit.scaleDown,

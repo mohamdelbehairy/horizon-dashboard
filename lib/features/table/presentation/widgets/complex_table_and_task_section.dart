@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:horizon/core/widgets/custom_background.dart';
 
+import '../../../tasks/presentation/widgets/tasks_widget.dart';
 import 'complex_table_widget.dart';
 
 class ComplexTableAndTasksSection extends StatelessWidget {
@@ -8,11 +8,18 @@ class ComplexTableAndTasksSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        const Expanded(child: ComplexTableWidget()),
-        const SizedBox(width: 16),
-        Expanded(child: CustomBackground(child: Container()))
+        Expanded(child: ComplexTableWidget()),
+        SizedBox(width: 16),
+        Expanded(
+            child: Row(
+          children: [
+            Expanded(child: TasksWidget()),
+            SizedBox(width: 16),
+            Expanded(child: TasksWidget()),
+          ],
+        ))
       ],
     );
   }

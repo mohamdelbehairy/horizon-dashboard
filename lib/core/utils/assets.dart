@@ -89,6 +89,10 @@ class Assets {
   /// assets/images/tables.svg
   static const String imagesTables = "assets/images/tables.svg";
 
+  /// Assets for imagesTaskIcon
+  /// assets/images/task_icon.svg
+  static const String imagesTaskIcon = "assets/images/task_icon.svg";
+
   /// Assets for imagesTopLine
   /// assets/images/top_line.svg
   static const String imagesTopLine = "assets/images/top_line.svg";

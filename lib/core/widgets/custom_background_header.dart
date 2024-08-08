@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:horizon/core/models/background_header_model.dart';
 import 'package:horizon/core/utils/styles.dart';
 
+import 'header_right_item.dart';
+
 class CustomBackgroundHeader extends StatelessWidget {
   const CustomBackgroundHeader(
       {super.key, required this.backgroundHeaderModel});
@@ -13,15 +15,10 @@ class CustomBackgroundHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(backgroundHeaderModel.title, style: Styles.bold24(context)),
-        Container(
-          height: 37,
-          width: 37,
-          decoration: BoxDecoration(
-              color: const Color(0xffF4F7FE),
-              borderRadius: BorderRadius.circular(10)),
-          child: backgroundHeaderModel.child,
-        )
+        HeaderRightItem(child: backgroundHeaderModel.child)
       ],
     );
   }
 }
+
+
