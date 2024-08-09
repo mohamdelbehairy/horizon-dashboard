@@ -49,6 +49,10 @@ class Assets {
   /// assets/images/done.svg
   static const String imagesDone = "assets/images/done.svg";
 
+  /// Assets for imagesEat
+  /// assets/images/eat.svg
+  static const String imagesEat = "assets/images/eat.svg";
+
   /// Assets for imagesFiles
   /// assets/images/files.svg
   static const String imagesFiles = "assets/images/files.svg";
@@ -124,6 +128,10 @@ class Assets {
   /// Assets for imagesSlowMotionVideo
   /// assets/images/slow_motion_video.svg
   static const String imagesSlowMotionVideo = "assets/images/slow_motion_video.svg";
+
+  /// Assets for imagesStarbucksBackground
+  /// assets/images/starbucks_background.png
+  static const String imagesStarbucksBackground = "assets/images/starbucks_background.png";
 
   /// Assets for imagesTables
   /// assets/images/tables.svg

@@ -14,18 +14,19 @@ class CheckTableWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBackground(
       backgroundModel: BackgroundModel(
+          height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
           child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          CustomBackgroundHeader(
-              backgroundHeaderModel: BackgroundHeaderModel(
-                  title: 'Check Table',
-                  child: const Icon(FontAwesomeIcons.ellipsis,
-                      color: Color(0xff4318FF)))),
-          const SizedBox(height: 24),
-          const CheckTableInfo(),
-        ],
-      )),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CustomBackgroundHeader(
+                  backgroundHeaderModel: BackgroundHeaderModel(
+                      title: 'Check Table',
+                      child: const Icon(FontAwesomeIcons.ellipsis,
+                          color: Color(0xff4318FF)))),
+              const SizedBox(height: 24),
+              const CheckTableInfo(),
+            ],
+          )),
     );
   }
 }
