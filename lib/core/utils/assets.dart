@@ -153,6 +153,10 @@ class Assets {
   /// assets/images/top_line.svg
   static const String imagesTopLine = "assets/images/top_line.svg";
 
+  /// Assets for imagesTotalSpent
+  /// assets/images/total_spent.svg
+  static const String imagesTotalSpent = "assets/images/total_spent.svg";
+
   /// Assets for imagesUpgradeToPro
   /// assets/images/upgrade_to_pro.svg
   static const String imagesUpgradeToPro = "assets/images/upgrade_to_pro.svg";

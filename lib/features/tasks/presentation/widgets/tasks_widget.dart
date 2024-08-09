@@ -23,37 +23,41 @@ class TasksWidget extends StatelessWidget {
     return CustomBackground(
       backgroundModel: BackgroundModel(
           height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const TasksHeader(),
-              const SizedBox(height: 24),
-              Padding(
-                padding: const EdgeInsets.only(left: 12, right: 12),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: List.generate(items.length, (index) {
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 25),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Flexible(
-                              child: FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  child: CustomSelectItem(text: items[index]))),
-                          const SizedBox(width: 8),
-                          CustomSvgPicture(
-                              svg: SvgModel(
-                                  image: Assets.imagesTaskIcon,
-                                  fit: BoxFit.scaleDown))
-                        ],
-                      ),
-                    );
-                  }),
-                ),
-              )
-            ],
+          child: SingleChildScrollView(
+            physics: const NeverScrollableScrollPhysics(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const TasksHeader(),
+                const SizedBox(height: 24),
+                Padding(
+                  padding: const EdgeInsets.only(left: 12, right: 12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: List.generate(items.length, (index) {
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 25),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Flexible(
+                                child: FittedBox(
+                                    fit: BoxFit.scaleDown,
+                                    child:
+                                        CustomSelectItem(text: items[index]))),
+                            const SizedBox(width: 8),
+                            CustomSvgPicture(
+                                svg: SvgModel(
+                                    image: Assets.imagesTaskIcon,
+                                    fit: BoxFit.scaleDown))
+                          ],
+                        ),
+                      );
+                    }),
+                  ),
+                )
+              ],
+            ),
           )),
     );
   }

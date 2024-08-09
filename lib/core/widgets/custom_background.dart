@@ -12,11 +12,11 @@ class CustomBackground extends StatelessWidget {
       height: backgroundModel.height,
       padding: EdgeInsets.only(
           left: backgroundModel.left ??
-              (MediaQuery.sizeOf(context).width > 1400 ? 32 : 16),
+              (MediaQuery.sizeOf(context).width > 1635 ? 32 : 16),
           right: backgroundModel.right ??
-              (MediaQuery.sizeOf(context).width > 1400 ? 32 : 16),
+              (MediaQuery.sizeOf(context).width > 1635 ? 32 : 16),
           top: backgroundModel.top ??
-              (MediaQuery.sizeOf(context).width > 1400 ? 32 : 16),
+              (MediaQuery.sizeOf(context).width > 1635 ? 32 : 16),
           bottom: backgroundModel.bottom ?? 12),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),

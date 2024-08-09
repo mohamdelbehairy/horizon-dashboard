@@ -13,19 +13,24 @@ class WeeklyRevenue extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBackground(
       backgroundModel: BackgroundModel(
+          height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 300,
+          right: 16,
+          left: 16,
+          
           child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Weekly Revenue', style: Styles.bold24(context)),
-              const ItemTable(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Weekly Revenue', style: Styles.bold24(context)),
+                  const ItemTable(),
+                ],
+              ),
+              const Spacer(),
+              Image.asset(Assets.imagesBarChart, fit: BoxFit.scaleDown)
             ],
-          ),
-          Image.asset(Assets.imagesBarChart, fit: BoxFit.scaleDown)
-        ],
-      )),
+          )),
     );
   }
 }
