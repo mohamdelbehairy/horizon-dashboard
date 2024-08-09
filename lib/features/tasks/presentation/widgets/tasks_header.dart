@@ -10,22 +10,39 @@ class TasksHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
-          child: ListTile(
-            contentPadding: EdgeInsets.zero,
-            minLeadingWidth: 0.0,
-            minTileHeight: 0.0,
-            minVerticalPadding: 0.0,
-            leading: const CircleAvatar(
-                radius: 22,
-                backgroundColor: Color(0xffEFF4FB),
-                child: Center(child: CustomSelectItem())),
-            title: Text('Tasks',
-                style: Styles.bold16(context).copyWith(fontSize: 18)),
+        Flexible(
+          child: FittedBox(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const CircleAvatar(
+                    radius: 22,
+                    backgroundColor: Color(0xffEFF4FB),
+                    child: Center(child: CustomSelectItem())),
+                SizedBox(
+                    width: MediaQuery.sizeOf(context).width > 1400 ? 12 : 8),
+                Text('Tasks',
+                    style: Styles.bold16(context).copyWith(fontSize: 18))
+              ],
+            ),
           ),
         ),
+        // Expanded(
+        //   child: ListTile(
+        //     contentPadding: EdgeInsets.zero,
+        //     minLeadingWidth: 0.0,
+        //     minTileHeight: 0.0,
+        //     minVerticalPadding: 0.0,
+        //     leading: const CircleAvatar(
+        //         radius: 22,
+        //         backgroundColor: Color(0xffEFF4FB),
+        //         child: Center(child: CustomSelectItem())),
+        //     title: Text('Tasks',
+        //         style: Styles.bold16(context).copyWith(fontSize: 18)),
+        //   ),
+        // ),
         const HeaderRightItem(
             child: Icon(FontAwesomeIcons.ellipsis, color: Color(0xff4318FF)))
       ],

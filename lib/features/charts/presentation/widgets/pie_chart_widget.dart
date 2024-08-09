@@ -16,7 +16,7 @@ class _PieChartWidgetState extends State<PieChartWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 345 / 1.5,
+      height: MediaQuery.sizeOf(context).width > 1575 ? 345 / 1.5 : 345 / 1.6,
       child: PieChart(pieChartData()),
     );
   }

@@ -1,6 +1,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAdela
+  /// assets/images/adela.png
+  static const String imagesAdela = "assets/images/adela.png";
+
   /// Assets for imagesAmerica
   /// assets/images/america.png
   static const String imagesAmerica = "assets/images/america.png";
@@ -16,6 +20,10 @@ class Assets {
   /// Assets for imagesCalendarToday
   /// assets/images/calendar_today.svg
   static const String imagesCalendarToday = "assets/images/calendar_today.svg";
+
+  /// Assets for imagesChristian
+  /// assets/images/christian.png
+  static const String imagesChristian = "assets/images/christian.png";
 
   /// Assets for imagesConsumptionperDay
   /// assets/images/ConsumptionperDay.png
@@ -52,6 +60,10 @@ class Assets {
   /// Assets for imagesFires
   /// assets/images/fires.svg
   static const String imagesFires = "assets/images/fires.svg";
+
+  /// Assets for imagesJason
+  /// assets/images/jason.png
+  static const String imagesJason = "assets/images/jason.png";
 
   /// Assets for imagesKanban
   /// assets/images/kanban.svg
@@ -120,6 +132,10 @@ class Assets {
   /// Assets for imagesTaskIcon
   /// assets/images/task_icon.svg
   static const String imagesTaskIcon = "assets/images/task_icon.svg";
+
+  /// Assets for imagesTeamMember
+  /// assets/images/team_member.svg
+  static const String imagesTeamMember = "assets/images/team_member.svg";
 
   /// Assets for imagesTimer
   /// assets/images/timer.svg

@@ -9,29 +9,35 @@ class DatesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBackground(
-        left: 16,
-        right: 16,
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  CustomSvgPicture(
-                      svg: SvgModel(
-                          image: Assets.imagesSelectDate,
-                          fit: BoxFit.scaleDown)),
-                  CustomSvgPicture(
-                      svg: SvgModel(
-                          image: Assets.imagesSelectYear,
-                          fit: BoxFit.scaleDown)),
-                ],
-              ),
-              // const SizedBox(height: 16),
-              CustomSvgPicture(svg: SvgModel(image: Assets.imagesDates)),
-            ],
-          ),
-        ));
+    return SizedBox(
+      height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
+      child: CustomBackground(
+          left: 16,
+          right: 16,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Flexible(
+                        child: CustomSvgPicture(
+                            svg: SvgModel(
+                                image: Assets.imagesSelectDate,
+                                fit: BoxFit.scaleDown))),
+                    Flexible(
+                      child: CustomSvgPicture(
+                          svg: SvgModel(
+                              image: Assets.imagesSelectYear,
+                              fit: BoxFit.scaleDown)),
+                    ),
+                  ],
+                ),
+                // const SizedBox(height: 16),
+                CustomSvgPicture(svg: SvgModel(image: Assets.imagesDates)),
+              ],
+            ),
+          )),
+    );
   }
 }

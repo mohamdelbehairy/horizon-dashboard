@@ -8,7 +8,7 @@ class BussinessDesignBottomWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 149,
+      height: MediaQuery.sizeOf(context).width > 1500 ? 149 : 149,
       width: double.infinity,
       decoration: const BoxDecoration(
           color: Color(0xffFAFCFE),
@@ -21,7 +21,10 @@ class BussinessDesignBottomWidget extends StatelessWidget {
           children: [
             SizedBox(height: 16),
             BottomTimeAndVideo(),
+            // if (MediaQuery.sizeOf(context).width > 1500)
             Spacer(),
+            // if (MediaQuery.sizeOf(context).width < 1500)
+            //   const SizedBox(height: 24),
             ButtonFriendsAndButton(),
             SizedBox(height: 16)
           ],

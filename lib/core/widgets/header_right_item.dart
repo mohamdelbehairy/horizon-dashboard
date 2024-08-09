@@ -13,7 +13,7 @@ class HeaderRightItem extends StatelessWidget {
       decoration: BoxDecoration(
           color: const Color(0xffF4F7FE),
           borderRadius: BorderRadius.circular(10)),
-      child: child,
+      child: Center(child: child),
     );
   }
 }

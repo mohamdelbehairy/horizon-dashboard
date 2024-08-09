@@ -19,40 +19,43 @@ class TasksWidget extends StatelessWidget {
       'Illustrations',
       'Promotional LP'
     ];
-    return CustomBackground(
-        child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const TasksHeader(),
-        const SizedBox(height: 24),
-        Padding(
-          padding: EdgeInsets.only(
-              left: MediaQuery.sizeOf(context).width > 1305 ? 12 : 4.0,
-              right: MediaQuery.sizeOf(context).width > 1305 ? 12 : 0.0),
+    return SizedBox(
+      height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
+      child: CustomBackground(
+          right: MediaQuery.sizeOf(context).width > 1400 ? 32 : 16,
+          left: MediaQuery.sizeOf(context).width > 1400 ? 32 : 16,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: List.generate(items.length, (index) {
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 25),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Flexible(
-                      child: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          child: CustomSelectItem(text: items[index])),
-                    ),
-                    CustomSvgPicture(
-                        svg: SvgModel(
-                            image: Assets.imagesTaskIcon,
-                            fit: BoxFit.scaleDown))
-                  ],
+            children: [
+              const TasksHeader(),
+              const SizedBox(height: 24),
+              Padding(
+                padding: const EdgeInsets.only(left: 12, right: 12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: List.generate(items.length, (index) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 25),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Flexible(
+                              child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  child: CustomSelectItem(text: items[index]))),
+                          const SizedBox(width: 8),
+                          CustomSvgPicture(
+                              svg: SvgModel(
+                                  image: Assets.imagesTaskIcon,
+                                  fit: BoxFit.scaleDown))
+                        ],
+                      ),
+                    );
+                  }),
                 ),
-              );
-            }),
-          ),
-        )
-      ],
-    ));
+              )
+            ],
+          )),
+    );
   }
 }

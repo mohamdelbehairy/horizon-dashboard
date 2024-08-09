@@ -10,7 +10,7 @@ class BussinessDesignBodyText extends StatelessWidget {
         fit: BoxFit.scaleDown,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32),
-          child: Text('What do you need to know to create better products?',
+          child: Text('What do you need to know to\n create better products?',
               style: Styles.bold20(context)),
         ));
   }

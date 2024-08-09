@@ -36,13 +36,11 @@ class _CustomSelectItemState extends State<CustomSelectItem> {
                 : null,
           ),
         ),
-        if (widget.text != null)
-          SizedBox(width: MediaQuery.sizeOf(context).width > 1360 ? 14 : 1),
+        if (widget.text != null) const SizedBox(width: 14),
         if (widget.text != null)
           Text(widget.text!,
-              style: isActive
-                  ? Styles.bold16(context)
-                  : Styles.medium14(context))
+              style:
+                  isActive ? Styles.bold16(context) : Styles.medium14(context))
       ],
     );
   }

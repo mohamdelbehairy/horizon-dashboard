@@ -9,7 +9,7 @@ class CustomBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 350,
+      // height: 350,
       padding: EdgeInsets.only(
           left: left ?? 32, right: right ?? 32, top: 32, bottom: bottom ?? 12),
       decoration: BoxDecoration(

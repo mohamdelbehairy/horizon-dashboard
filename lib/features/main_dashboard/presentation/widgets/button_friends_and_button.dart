@@ -14,19 +14,29 @@ class ButtonFriendsAndButton extends StatelessWidget {
         const SizedBox(width: 8),
         Flexible(
           child: FittedBox(
-            child: Container(
-              height: 40,
-              width: 128,
-              decoration: BoxDecoration(
+              child: MaterialButton(
+                  height: 40,
+                  minWidth: 128,
                   color: const Color(0xff4318FF),
-                  borderRadius: BorderRadius.circular(16)),
-              child: Center(
-                child: Text('Get Started',
-                    style:
-                        Styles.bold14(context).copyWith(color: Colors.white)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16)),
+                  onPressed: () {},
+                  child: Text('Get Started',
+                      style:
+                          Styles.bold14(context).copyWith(color: Colors.white)))
+              // Container(
+              //   height: 40,
+              //   width: 128,
+              //   decoration: BoxDecoration(
+              //       color: const Color(0xff4318FF),
+              //       borderRadius: BorderRadius.circular(16)),
+              //   child: Center(
+              //     child: Text('Get Started',
+              //         style:
+              //             Styles.bold14(context).copyWith(color: Colors.white)),
+              //   ),
+              // ),
               ),
-            ),
-          ),
         )
       ],
     );
