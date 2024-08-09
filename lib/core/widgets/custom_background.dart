@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:horizon/core/models/background_model.dart';
 
 class CustomBackground extends StatelessWidget {
-  const CustomBackground(
-      {super.key, required this.child, this.left, this.right, this.bottom});
-  final Widget child;
-  final double? left, right, bottom;
+  const CustomBackground({super.key, required this.backgroundModel});
+
+  final BackgroundModel backgroundModel;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 350,
+      height: backgroundModel.height,
       padding: EdgeInsets.only(
-          left: left ?? 32, right: right ?? 32, top: 32, bottom: bottom ?? 12),
+          left: backgroundModel.left ??
+              (MediaQuery.sizeOf(context).width > 1400 ? 32 : 16),
+          right: backgroundModel.right ??
+              (MediaQuery.sizeOf(context).width > 1400 ? 32 : 16),
+          top: 32,
+          bottom: backgroundModel.bottom ?? 12),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),
-      child: child,
+      child: backgroundModel.child,
     );
   }
 }

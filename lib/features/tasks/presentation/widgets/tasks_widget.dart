@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:horizon/core/models/background_model.dart';
 import 'package:horizon/core/models/svg_model.dart';
 import 'package:horizon/core/utils/assets.dart';
 import 'package:horizon/core/widgets/custom_background.dart';
@@ -19,11 +20,9 @@ class TasksWidget extends StatelessWidget {
       'Illustrations',
       'Promotional LP'
     ];
-    return SizedBox(
-      height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
-      child: CustomBackground(
-          right: MediaQuery.sizeOf(context).width > 1400 ? 32 : 16,
-          left: MediaQuery.sizeOf(context).width > 1400 ? 32 : 16,
+    return CustomBackground(
+      backgroundModel: BackgroundModel(
+          height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

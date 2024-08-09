@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:horizon/core/models/button_model.dart';
 import 'package:horizon/core/utils/assets.dart';
-import 'package:horizon/core/utils/styles.dart';
+
+import '../../../../core/widgets/custom_button.dart';
 
 class ButtonFriendsAndButton extends StatelessWidget {
   const ButtonFriendsAndButton({super.key});
@@ -14,29 +16,11 @@ class ButtonFriendsAndButton extends StatelessWidget {
         const SizedBox(width: 8),
         Flexible(
           child: FittedBox(
-              child: MaterialButton(
-                  height: 40,
-                  minWidth: 128,
-                  color: const Color(0xff4318FF),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16)),
-                  onPressed: () {},
-                  child: Text('Get Started',
-                      style:
-                          Styles.bold14(context).copyWith(color: Colors.white)))
-              // Container(
-              //   height: 40,
-              //   width: 128,
-              //   decoration: BoxDecoration(
-              //       color: const Color(0xff4318FF),
-              //       borderRadius: BorderRadius.circular(16)),
-              //   child: Center(
-              //     child: Text('Get Started',
-              //         style:
-              //             Styles.bold14(context).copyWith(color: Colors.white)),
-              //   ),
-              // ),
-              ),
+            child: CustomButton(
+              buttonModel: ButtonModel(
+                  height: 40, width: 128, buttonName: 'Get Started'),
+            ),
+          ),
         )
       ],
     );

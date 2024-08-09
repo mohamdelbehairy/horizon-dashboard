@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:horizon/core/models/background_model.dart';
 import 'package:horizon/core/models/svg_model.dart';
 import 'package:horizon/core/utils/assets.dart';
 import 'package:horizon/core/widgets/custom_background.dart';
@@ -9,11 +10,11 @@ class DatesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
-      child: CustomBackground(
+    return CustomBackground(
+      backgroundModel: BackgroundModel(
           left: 16,
           right: 16,
+          height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
           child: SingleChildScrollView(
             child: Column(
               children: [

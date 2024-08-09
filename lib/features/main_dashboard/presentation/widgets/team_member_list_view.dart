@@ -24,11 +24,8 @@ class TeamMemberListView extends StatelessWidget {
           image: Assets.imagesJason),
     ];
     return Column(
-      children: List.generate(
-          item.length,
-          (index) => Padding(
-              padding: EdgeInsets.only(bottom: index == 2 ? 20 : 0.0),
-              child: TeamMemberWidget(teamMemberModel: item[index]))),
+      children: List.generate(item.length,
+          (index) => TeamMemberWidget(teamMemberModel: item[index])),
     );
   }
 }

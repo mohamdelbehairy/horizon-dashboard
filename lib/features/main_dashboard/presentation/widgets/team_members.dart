@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:horizon/core/models/background_model.dart';
 import 'package:horizon/core/widgets/custom_background.dart';
 
 import 'team_member_header.dart';
@@ -10,19 +11,17 @@ class TeamMembers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.sizeOf(context).width > 1600 ? 345 : null,
-      child: const CustomBackground(
-          child: SingleChildScrollView(
-        // physics: NeverScrollableScrollPhysics(),
-        child: Column(
-          children: [
-            TeamMemberHeader(),
-            // SizedBox(height: 16),
-            TeamMemberListView(),
-          ],
-        ),
-      )),
+    return CustomBackground(
+      backgroundModel: BackgroundModel(
+          height: MediaQuery.sizeOf(context).width > 1600 ? 345 : 345,
+          child: const SingleChildScrollView(
+            child: Column(
+              children: [
+                TeamMemberHeader(),
+                TeamMemberListView(),
+              ],
+            ),
+          )),
     );
   }
 }

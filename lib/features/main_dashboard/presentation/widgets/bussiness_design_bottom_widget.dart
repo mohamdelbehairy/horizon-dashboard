@@ -21,10 +21,7 @@ class BussinessDesignBottomWidget extends StatelessWidget {
           children: [
             SizedBox(height: 16),
             BottomTimeAndVideo(),
-            // if (MediaQuery.sizeOf(context).width > 1500)
             Spacer(),
-            // if (MediaQuery.sizeOf(context).width < 1500)
-            //   const SizedBox(height: 24),
             ButtonFriendsAndButton(),
             SizedBox(height: 16)
           ],

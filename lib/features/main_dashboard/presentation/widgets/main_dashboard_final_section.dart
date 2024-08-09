@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'bussiness_design_and_team_member.dart';
-import 'security_and_starbucks.dart';
+import 'security_and_starbucks_section.dart';
 
 class MainDashboardFinalSection extends StatelessWidget {
   const MainDashboardFinalSection({super.key});
@@ -12,7 +12,7 @@ class MainDashboardFinalSection extends StatelessWidget {
       children: [
         Expanded(child: BussinessDesignAndTeamMember()),
         SizedBox(width: 16),
-        Expanded(child: SecurityAndStarbucks()),
+        Expanded(child: SecurityAndStarbucksSection()),
       ],
     );
   }
