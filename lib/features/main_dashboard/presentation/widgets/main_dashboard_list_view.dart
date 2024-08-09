@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/core/utils/assets.dart';
 
-import '../../data/models/main_dashboard_item_model.dart';
+import '../../../dashboard/data/models/main_dashboard_item_model.dart';
 import 'main_dashboard_item.dart';
 
 class MainDashboardListView extends StatelessWidget {

@@ -3,7 +3,7 @@ import 'package:horizon/core/models/svg_model.dart';
 import 'package:horizon/core/utils/styles.dart';
 import 'package:horizon/core/widgets/custom_svg_picture.dart';
 
-import '../../data/models/main_dashboard_item_model.dart';
+import '../../../dashboard/data/models/main_dashboard_item_model.dart';
 
 class MainDashboardItem extends StatelessWidget {
   const MainDashboardItem({super.key, required this.mainDashboardItemModel});

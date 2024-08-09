@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/core/utils/styles.dart';
 import '../../../../core/widgets/dashboard_title_section.dart';
-import '../../../main_dashboard/presentation/widgets/main_dashboard_final_section.dart';
+import '../widgets/main_dashboard_final_section.dart';
 import '../../../table/presentation/widgets/complex_table_and_task_section.dart';
-import 'check_table_and_charts_setion.dart';
-import 'main_dashboard_list_view.dart';
+import '../../../dashboard/presentation/widgets/check_table_and_charts_setion.dart';
+import '../widgets/main_dashboard_list_view.dart';
 
 class MainDashboard extends StatelessWidget {
   const MainDashboard({super.key});
