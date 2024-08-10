@@ -25,13 +25,19 @@ class UpgradeToProItem extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 40 + 30),
-          Text('Upgrade to PRO',
-              style: Styles.bold16(context).copyWith(color: Colors.white)),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Text('Upgrade to PRO',
+                  style: Styles.bold16(context).copyWith(color: Colors.white))),
           const SizedBox(height: 8),
-          Text('to get access to all features! Connect with Venus World! ',
-              textAlign: TextAlign.center,
-              style: Styles.medium14(context)
-                  .copyWith(color: const Color(0xffE9EDF7)))
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Text(
+                'to get access to all features! Connect with Venus World! ',
+                textAlign: TextAlign.center,
+                style: Styles.medium14(context)
+                    .copyWith(color: const Color(0xffE9EDF7))),
+          )
         ],
       ),
     );

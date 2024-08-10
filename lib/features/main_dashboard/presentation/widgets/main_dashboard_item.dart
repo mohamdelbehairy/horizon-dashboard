@@ -14,7 +14,11 @@ class MainDashboardItem extends StatelessWidget {
     return Container(
       height: 97,
       width: 248,
-      padding: const EdgeInsets.symmetric(vertical: 8),
+      padding: EdgeInsets.symmetric(
+          vertical: mainDashboardItemModel.subtitle2 != null &&
+                  MediaQuery.sizeOf(context).width < 1200
+              ? 0.0
+              : 8),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),
       child: Center(
@@ -61,11 +65,10 @@ class MainDashboardItem extends StatelessWidget {
                 Row(
                   children: [
                     Flexible(
-                      child: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          child: Text(mainDashboardItemModel.subtitle2!,
-                              style: Styles.bold12(context))),
-                    ),
+                        child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(mainDashboardItemModel.subtitle2!,
+                                style: Styles.bold12(context)))),
                     const SizedBox(width: 8),
                     Flexible(
                       child: FittedBox(

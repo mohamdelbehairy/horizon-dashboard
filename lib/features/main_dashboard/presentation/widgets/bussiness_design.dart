@@ -17,19 +17,22 @@ class BussinessDesign extends StatelessWidget {
           left: 0.0,
           bottom: 0.0,
           height: MediaQuery.sizeOf(context).width > 1600 ? 345 : 345,
-          child: const CustomScrollView(
-            physics: NeverScrollableScrollPhysics(),
+          child: CustomScrollView(
+            // physics: NeverScrollableScrollPhysics(),
             slivers: [
               SliverFillRemaining(
                 hasScrollBody: false,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    BussinessDesignHeader(),
-                    SizedBox(height: 52),
-                    BussinessDesignBodyText(),
-                    Spacer(),
-                    BussinessDesignBottomWidget()
+                    const BussinessDesignHeader(),
+                    if (MediaQuery.sizeOf(context).width > 1400)
+                      const SizedBox(height: 52),
+                    if (MediaQuery.sizeOf(context).width < 1400)
+                      const SizedBox(height: 30),
+                    const BussinessDesignBodyText(),
+                    const Spacer(),
+                    const BussinessDesignBottomWidget()
                   ],
                 ),
               )

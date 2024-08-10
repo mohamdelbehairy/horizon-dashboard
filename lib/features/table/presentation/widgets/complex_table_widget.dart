@@ -16,8 +16,9 @@ class ComplexTableWidget extends StatelessWidget {
     return CustomBackground(
       backgroundModel: BackgroundModel(
           height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 330,
+          bottom: 0.0,
           child: SingleChildScrollView(
-            physics: const NeverScrollableScrollPhysics(),
+            // physics: const NeverScrollableScrollPhysics(),
             child: Column(
               children: [
                 CustomBackgroundHeader(
