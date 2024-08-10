@@ -1,11 +1,13 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:horizon/features/dashboard/data/manager/drawer/drawer_cubit.dart';
 import 'package:horizon/features/dashboard/presentation/views/dashboard_view.dart';
 
 void main() {
   // CachedSvg.svgPrecacheImage();
   runApp(DevicePreview(
-    enabled: true,
+    enabled: false,
     builder: (context) => const Horizon(),
   ));
 }
@@ -15,11 +17,14 @@ class Horizon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
-      debugShowCheckedModeBanner: false,
-      home: const DashboardView(),
+    return BlocProvider(
+      create: (context) => DrawerCubit(),
+      child: MaterialApp(
+        locale: DevicePreview.locale(context),
+        builder: DevicePreview.appBuilder,
+        debugShowCheckedModeBanner: false,
+        home: const DashboardView(),
+      ),
     );
   }
 }
