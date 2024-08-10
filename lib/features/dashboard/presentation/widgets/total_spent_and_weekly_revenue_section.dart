@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'total_spent_wodget.dart';
+import 'total_spent_widget.dart';
 import 'weekly_revenue.dart';
 
 class TotalSpentAndWeeklyRevenueSection extends StatelessWidget {

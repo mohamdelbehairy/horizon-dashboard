@@ -17,7 +17,11 @@ class TotalSpentWidget extends StatelessWidget {
             left: 0,
             top: 0.0,
             bottom: 0.0,
-            height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 300,
+            height: MediaQuery.sizeOf(context).width < 800
+                ? 150
+                : MediaQuery.sizeOf(context).width > 1635
+                    ? 350
+                    : 300,
             child:
                 CustomSvgPicture(svg: SvgModel(image: Assets.imagesTotalSpent))
             //     Column(

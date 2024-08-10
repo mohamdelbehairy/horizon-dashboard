@@ -11,10 +11,12 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
           filled: true,
-          fillColor: const Color(0xffF4F7FE),
-          border: borderMethod(),
-          enabledBorder: borderMethod(),
-          focusedBorder: borderMethod(),
+          fillColor: MediaQuery.sizeOf(context).width < 800
+              ? Colors.transparent
+              : const Color(0xffF4F7FE),
+          border: borderMethod(context),
+          enabledBorder: borderMethod(context),
+          focusedBorder: borderMethod(context),
           hintText: 'Search',
           hintStyle: Styles.regular14(context),
           prefixIcon: SvgPicture.asset(
@@ -24,9 +26,12 @@ class CustomTextField extends StatelessWidget {
     );
   }
 
-  OutlineInputBorder borderMethod() {
+  OutlineInputBorder borderMethod(BuildContext context) {
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(49),
-        borderSide: const BorderSide(color: Color(0xffF4F7FE)));
+        borderSide: BorderSide(
+            color: MediaQuery.sizeOf(context).width < 800
+                ? Colors.transparent
+                : const Color(0xffF4F7FE)));
   }
 }

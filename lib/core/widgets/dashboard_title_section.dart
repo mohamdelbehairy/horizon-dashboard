@@ -16,11 +16,11 @@ class DashboardTitleSection extends StatelessWidget {
             flex: MediaQuery.sizeOf(context).width > 1200 ? 2 : 1,
             child: FittedBox(
               fit: BoxFit.scaleDown,
-              child: Text(title == 'Dashboard'? 'Main Dashboard':title,
+              child: Text(title == 'Dashboard' ? 'Main Dashboard' : title,
                   textAlign: TextAlign.start, style: Styles.bold34(context)),
             )),
         const SizedBox(width: 4),
-        const TextFieldWidget(),
+        if (MediaQuery.sizeOf(context).width > 800) const TextFieldWidget(),
       ],
     );
   }

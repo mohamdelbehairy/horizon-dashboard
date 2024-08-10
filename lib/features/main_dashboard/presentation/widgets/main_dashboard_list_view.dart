@@ -53,15 +53,20 @@ class MainDashboardListView extends StatelessWidget {
 
     return SizedBox(
       height: 97,
-      child: ListView.builder(
-          physics: const BouncingScrollPhysics(),
-          scrollDirection: Axis.horizontal,
-          itemCount: items.length,
-          itemBuilder: (context, index) {
-            return Padding(
-                padding: const EdgeInsets.only(right: 16),
-                child: MainDashboardItem(mainDashboardItemModel: items[index]));
-          }),
+      child: Padding(
+        padding: EdgeInsets.only(
+            left: MediaQuery.sizeOf(context).width < 800 ? 12 : 0.0),
+        child: ListView.builder(
+            physics: const BouncingScrollPhysics(),
+            scrollDirection: Axis.horizontal,
+            itemCount: items.length,
+            itemBuilder: (context, index) {
+              return Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child:
+                      MainDashboardItem(mainDashboardItemModel: items[index]));
+            }),
+      ),
     );
   }
 }

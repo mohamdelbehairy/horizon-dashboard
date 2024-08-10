@@ -18,7 +18,8 @@ class ComplexTableStatus extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: List.generate(tableModel.length, (index) {
             return Padding(
-              padding: const EdgeInsets.only(bottom: 25),
+              padding: EdgeInsets.only(
+                  bottom: MediaQuery.sizeOf(context).width < 365 ? 26 : 25),
               child: Row(
                 children: [
                   FittedBox(

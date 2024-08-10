@@ -18,8 +18,12 @@ class TableListView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: List.generate(tableModel.length, (index) {
             return Padding(
-              padding:
-                  EdgeInsets.only(bottom: tableModel.length == 4 ? 30 : 20),
+              padding: EdgeInsets.only(
+                  bottom: tableModel.length == 4
+                      ? 30
+                      : MediaQuery.sizeOf(context).width < 800
+                          ? 22
+                          : 20),
               child: FittedBox(
                   fit: BoxFit.scaleDown,
                   child: Text(

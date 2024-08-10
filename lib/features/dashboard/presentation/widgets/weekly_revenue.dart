@@ -13,7 +13,11 @@ class WeeklyRevenue extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBackground(
       backgroundModel: BackgroundModel(
-          height: MediaQuery.sizeOf(context).width > 1635 ? 350 : 300,
+          height: MediaQuery.sizeOf(context).width < 800
+              ? 200
+              : MediaQuery.sizeOf(context).width > 1635
+                  ? 350
+                  : 300,
           right: 32,
           left: 32,
           child: CustomScrollView(

@@ -13,8 +13,11 @@ class CheckTableInfo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         const CheckTableName(),
+        if (MediaQuery.sizeOf(context).width < 365) const SizedBox(width: 24),
         TableListView(tableModel: TableModel(title: 'PROGRESS', number: 2)),
+        if (MediaQuery.sizeOf(context).width < 365) const SizedBox(width: 24),
         TableListView(tableModel: TableModel(title: 'QUANTITY', number: 3)),
+        if (MediaQuery.sizeOf(context).width < 365) const SizedBox(width: 24),
         TableListView(tableModel: TableModel(title: 'DATE', number: 4)),
       ],
     );

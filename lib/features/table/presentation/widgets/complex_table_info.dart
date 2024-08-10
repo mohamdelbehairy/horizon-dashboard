@@ -14,9 +14,12 @@ class ComplexTableInfo extends StatelessWidget {
       children: [
         TableListView(
             tableModel: TableModel(title: 'NAME', number: 1, length: 4)),
+        if (MediaQuery.sizeOf(context).width < 365) const SizedBox(width: 32),
         ComplexTableStatus(tableModel: TableModel(title: 'STATUS', length: 4)),
+        if (MediaQuery.sizeOf(context).width < 365) const SizedBox(width: 24),
         TableListView(
             tableModel: TableModel(title: 'DATE', number: 5, length: 4)),
+        if (MediaQuery.sizeOf(context).width < 365) const SizedBox(width: 24),
         TableListView(
             tableModel: TableModel(title: 'PROGRESS', number: 6, length: 4)),
       ],

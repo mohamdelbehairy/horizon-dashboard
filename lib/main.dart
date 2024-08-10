@@ -1,9 +1,13 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:horizon/features/dashboard/presentation/views/dashboard_view.dart';
 
 void main() {
   // CachedSvg.svgPrecacheImage();
-  runApp(const Horizon());
+  runApp(DevicePreview(
+    enabled: true,
+    builder: (context) => const Horizon(),
+  ));
 }
 
 class Horizon extends StatelessWidget {
@@ -11,9 +15,11 @@ class Horizon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home: DashboardView(),
+      home: const DashboardView(),
     );
   }
 }

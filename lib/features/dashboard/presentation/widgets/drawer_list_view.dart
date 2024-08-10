@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/assets.dart';
@@ -29,6 +31,7 @@ class _DrawerListViewState extends State<DrawerListView> {
             onTap: () {
               setState(() {
                 activeIndex = e.key;
+                log('activeIndex: $activeIndex');
               });
             },
             child: activeIndex == e.key

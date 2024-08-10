@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/widgets/custom_app_bar.dart';
 import '../../../charts/presentation/widgets/charts_widget.dart';
-import '../../../dashboard/presentation/widgets/total_spent_wodget.dart';
+import '../../../dashboard/presentation/widgets/total_spent_widget.dart';
 import '../../../dashboard/presentation/widgets/weekly_revenue.dart';
 import '../../../main_dashboard/presentation/widgets/bussiness_design_and_team_member.dart';
 import '../../../main_dashboard/presentation/widgets/main_dashboard_list_view.dart';
