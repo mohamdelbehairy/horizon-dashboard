@@ -24,7 +24,12 @@ class LoginViewAuth extends StatelessWidget {
         const SizedBox(height: 24),
         const SignInWithGoogleWidget(),
         const SizedBox(height: 24),
-        CustomSvgPicture(svg: SvgModel(image: Assets.imagesOr)),
+        SizedBox(
+            width: MediaQuery.sizeOf(context).width < 800
+                ? MediaQuery.sizeOf(context).width - 32
+                : null,
+            child: CustomSvgPicture(
+                svg: SvgModel(image: Assets.imagesOr, fit: BoxFit.scaleDown))),
         const SizedBox(height: 24),
         const LoginViewTextField(title: 'Email', hintText: 'mail@simmmple.com'),
         const SizedBox(height: 24),
@@ -34,10 +39,24 @@ class LoginViewAuth extends StatelessWidget {
         const KeepMeLogingWidget(),
         const SizedBox(height: 28),
         CustomButton(
-            buttonModel:
-                ButtonModel(buttonName: 'Sign In', width: 410, height: 54))
+            buttonModel: ButtonModel(
+                buttonName: 'Sign In',
+                width: MediaQuery.sizeOf(context).width < 800
+                    ? MediaQuery.sizeOf(context).width - 32
+                    : 410,
+                height: 60)),
+        const SizedBox(height: 28),
+        Row(
+          children: [
+            Text('Not registered yet?',
+                style: Styles.regular14(context)
+                    .copyWith(color: const Color(0xff2B3674))),
+            Text('Create an Account',
+                style: Styles.bold14(context)
+                    .copyWith(color: const Color(0xff4318FF))),
+          ],
+        )
       ],
     );
-  
   }
 }

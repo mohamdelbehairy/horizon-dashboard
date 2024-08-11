@@ -1,28 +1,25 @@
 import 'package:flutter/material.dart';
-import '../../../../core/widgets/custom_app_bar.dart';
-import '../../../main_dashboard/presentation/widgets/mobile_layout_list_view_vertical.dart';
-import '../../../main_dashboard/presentation/widgets/main_dashboard_list_view.dart';
+import '../../../main_dashboard/presentation/views/main_dashboard_mobile.dart';
+import 'custom_bloc_consumber_drawer.dart';
 
 class MobileDashboard extends StatelessWidget {
   const MobileDashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
-      physics: BouncingScrollPhysics(),
+    return CustomScrollView(
+      physics: const BouncingScrollPhysics(),
       slivers: [
         SliverFillRemaining(
-            hasScrollBody: false,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CustomAppBar(title: 'Dashboard'),
-                SizedBox(height: 16),
-                MainDashboardListView(),
-                SizedBox(height: 24),
-                MobileLayoutListViewVertical(),
-              ],
-            )),
+          hasScrollBody: false,
+          child: CustomBlocConsumerDrawer(
+            dashboard: (context) => const MainDashboardMobile(),
+            market: (context) => Container(color: Colors.red),
+            tables: (context) => Container(color: Colors.blue),
+            kanban: (context) => Container(color: Colors.green),
+            profile: (context) => Container(color: Colors.yellow),
+          ),
+        ),
       ],
     );
   }

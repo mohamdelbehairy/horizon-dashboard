@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:horizon/core/models/background_model.dart';
+import '../../../../core/widgets/custom_background.dart';
 import 'security.dart';
-import 'starbucks.dart';
 
 class SecurityAndStarbucksSection extends StatelessWidget {
   const SecurityAndStarbucksSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(child: Security()),
-        SizedBox(width: 16),
-        Expanded(child: Starbucks()),
+        const Expanded(child: Security()),
+        const SizedBox(width: 16),
+        Expanded(
+            child: CustomBackground(
+                backgroundModel:
+                    BackgroundModel(height: 345, child: const SizedBox()))),
+        // Expanded(child: Starbucks()),
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../main_dashboard/presentation/views/main_dashboard_tablet.dart';
+import 'custom_bloc_consumber_drawer.dart';
 import 'custom_drawer.dart';
 
 class TabletDashboard extends StatelessWidget {
@@ -7,10 +8,19 @@ class TabletDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(child: CustomDrawer()),
-        Expanded(flex: 2, child: MainDashboardTablet())
+        const Expanded(child: CustomDrawer()),
+        // const Expanded(flex: 2, child: MainDashboardTablet()),
+        Expanded(
+          flex: 2,
+          child: CustomBlocConsumerDrawer(
+              dashboard: (context) => const MainDashboardTablet(),
+              market: (context) => Container(color: Colors.red),
+              tables: (context) => Container(color: Colors.blue),
+              kanban: (context) => Container(color: Colors.green),
+              profile: (context) => Container(color: Colors.yellow)),
+        ),
       ],
     );
   }

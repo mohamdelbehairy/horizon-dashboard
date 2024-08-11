@@ -24,7 +24,9 @@ class LoginViewTextField extends StatelessWidget {
         const SizedBox(height: 6),
         SizedBox(
           // height: 50,
-          width: 410,
+          width: MediaQuery.sizeOf(context).width < 800
+              ? MediaQuery.sizeOf(context).width - 32
+              : 410,
           child: TextField(
             decoration: InputDecoration(
                 contentPadding: const EdgeInsets.all(20),

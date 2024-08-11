@@ -11,7 +11,9 @@ class SignInWithGoogleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      width: 410,
+      width: MediaQuery.sizeOf(context).width < 800
+          ? MediaQuery.sizeOf(context).width - 32
+          : 410,
       decoration: BoxDecoration(
           color: const Color(0xffF4F7FE),
           borderRadius: BorderRadius.circular(16)),

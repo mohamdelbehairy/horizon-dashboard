@@ -89,10 +89,6 @@ class Assets {
   /// assets/images/line2.svg
   static const String imagesLine2 = "assets/images/line2.svg";
 
-  /// Assets for imagesLoginBackground
-  /// assets/images/login_background.png
-  static const String imagesLoginBackground = "assets/images/login_background.png";
-
   /// Assets for imagesMark
   /// assets/images/mark.svg
   static const String imagesMark = "assets/images/mark.svg";

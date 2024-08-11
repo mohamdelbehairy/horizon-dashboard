@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/core/widgets/adaptive_layout_widget.dart';
 import 'package:horizon/features/dashboard/presentation/widgets/custom_drawer.dart';
-import 'package:horizon/features/login/presentation/views/login_view.dart';
 
 import '../widgets/mobile_dashboard.dart';
 import '../widgets/dashboard_view_appbar.dart';
@@ -31,6 +30,6 @@ class _DashboardViewState extends State<DashboardView> {
         body: AdaptiveLayoutWidget(
             mobileLayout: (context) => const MobileDashboard(),
             tabletLayout: (context) => const TabletDashboard(),
-            desktopLayout: (context) => const LoginView()));
+            desktopLayout: (context) => const DesktopDashboard()));
   }
 }
