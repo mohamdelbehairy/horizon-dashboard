@@ -69,6 +69,10 @@ class Assets {
   /// assets/images/google.svg
   static const String imagesGoogle = "assets/images/google.svg";
 
+  /// Assets for imagesGreatest
+  /// assets/images/greatest.png
+  static const String imagesGreatest = "assets/images/greatest.png";
+
   /// Assets for imagesJason
   /// assets/images/jason.png
   static const String imagesJason = "assets/images/jason.png";
@@ -97,6 +101,10 @@ class Assets {
   /// assets/images/market.svg
   static const String imagesMarket = "assets/images/market.svg";
 
+  /// Assets for imagesMostEssential
+  /// assets/images/most_essential.png
+  static const String imagesMostEssential = "assets/images/most_essential.png";
+
   /// Assets for imagesNewTask
   /// assets/images/new_task.svg
   static const String imagesNewTask = "assets/images/new_task.svg";
@@ -124,6 +132,10 @@ class Assets {
   /// Assets for imagesSearch
   /// assets/images/search.svg
   static const String imagesSearch = "assets/images/search.svg";
+
+  /// Assets for imagesSeeProjectDetails
+  /// assets/images/see_project_details.svg
+  static const String imagesSeeProjectDetails = "assets/images/see_project_details.svg";
 
   /// Assets for imagesSelectDate
   /// assets/images/select_date.svg
@@ -164,6 +176,10 @@ class Assets {
   /// Assets for imagesTeamMember
   /// assets/images/team_member.svg
   static const String imagesTeamMember = "assets/images/team_member.svg";
+
+  /// Assets for imagesTechnology
+  /// assets/images/technology.png
+  static const String imagesTechnology = "assets/images/technology.png";
 
   /// Assets for imagesTimer
   /// assets/images/timer.svg
