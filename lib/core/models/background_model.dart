@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class BackgroundModel {
   final Widget child;
-  final double? height;
+  final double? height, width;
   final double? left, right, bottom, top;
 
   BackgroundModel(
@@ -11,5 +11,5 @@ class BackgroundModel {
       this.right,
       this.bottom,
       this.top,
-      this.height});
+      this.height,this.width});
 }

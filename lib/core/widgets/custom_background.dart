@@ -10,6 +10,7 @@ class CustomBackground extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: backgroundModel.height,
+      width: backgroundModel.width,
       padding: EdgeInsets.only(
           left: backgroundModel.left ??
               (MediaQuery.sizeOf(context).width > 1635 ? 32 : 16),

@@ -11,18 +11,21 @@ class TextFieldListView extends StatelessWidget {
       Assets.imagesNotification,
       Assets.imagesDarkMode,
       Assets.imagesMark,
-      Assets.imagesProfileImage
+      Assets.imagesProfileAvatar
     ];
     return Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: List.generate(items.length, (index) {
-    return index != 3
-        ? Expanded(
-            child: SvgPicture.asset(items[index], fit: BoxFit.scaleDown))
-        : Expanded(
-            child: Image.asset(Assets.imagesProfileImage,
-                fit: BoxFit.scaleDown));
-          }),
-        );
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: List.generate(items.length, (index) {
+        return index != 3
+            ? Expanded(
+                child: SvgPicture.asset(items[index], fit: BoxFit.scaleDown))
+            : Expanded(
+                child: ClipRRect(
+                borderRadius: BorderRadius.circular(60),
+                child: Image.asset(Assets.imagesProfileAvatar,
+                    fit: BoxFit.scaleDown),
+              ));
+      }),
+    );
   }
 }

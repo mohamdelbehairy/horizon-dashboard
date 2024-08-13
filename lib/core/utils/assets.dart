@@ -113,9 +113,13 @@ class Assets {
   /// assets/images/profile.svg
   static const String imagesProfile = "assets/images/profile.svg";
 
-  /// Assets for imagesProfileImage
-  /// assets/images/profile_image.png
-  static const String imagesProfileImage = "assets/images/profile_image.png";
+  /// Assets for imagesProfileAvatar
+  /// assets/images/profile_avatar.png
+  static const String imagesProfileAvatar = "assets/images/profile_avatar.png";
+
+  /// Assets for imagesProfileBackground
+  /// assets/images/profile_background.png
+  static const String imagesProfileBackground = "assets/images/profile_background.png";
 
   /// Assets for imagesSearch
   /// assets/images/search.svg
@@ -140,6 +144,10 @@ class Assets {
   /// Assets for imagesStarbucksBackground
   /// assets/images/starbucks_background.png
   static const String imagesStarbucksBackground = "assets/images/starbucks_background.png";
+
+  /// Assets for imagesStorege
+  /// assets/images/storege.svg
+  static const String imagesStorege = "assets/images/storege.svg";
 
   /// Assets for imagesTables
   /// assets/images/tables.svg
