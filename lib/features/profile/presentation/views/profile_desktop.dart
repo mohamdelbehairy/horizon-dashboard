@@ -19,13 +19,15 @@ class ProfileDesktop extends StatelessWidget {
           children: [
             const Expanded(flex: 2, child: ProfileInfoWidget()),
             const SizedBox(width: 16),
-            const ProfileStorge(),
+            const Expanded(child: ProfileStorge()),
             const SizedBox(width: 16),
             Expanded(
                 flex: 2,
                 child: CustomBackground(
-                    backgroundModel:
-                        BackgroundModel(height: 320, child: Container()))),
+                    backgroundModel: BackgroundModel(
+                        height:
+                            MediaQuery.sizeOf(context).width > 1700 ? 360 : 300,
+                        child: Container()))),
           ],
         )
       ],

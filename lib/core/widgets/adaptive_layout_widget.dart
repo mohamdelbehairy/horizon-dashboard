@@ -16,7 +16,7 @@ class AdaptiveLayoutWidget extends StatelessWidget {
       log('width: ${constraints.maxWidth}');
       if (constraints.maxWidth < 800) {
         return mobileLayout(context);
-      } else if (constraints.maxWidth < 1200) {
+      } else if (constraints.maxWidth < 1300) {
         return tabletLayout(context);
       } else {
         return desktopLayout(context);

@@ -145,6 +145,10 @@ class Assets {
   /// assets/images/starbucks_background.png
   static const String imagesStarbucksBackground = "assets/images/starbucks_background.png";
 
+  /// Assets for imagesStorageSize
+  /// assets/images/storage_size.svg
+  static const String imagesStorageSize = "assets/images/storage_size.svg";
+
   /// Assets for imagesStorege
   /// assets/images/storege.svg
   static const String imagesStorege = "assets/images/storege.svg";
@@ -176,5 +180,13 @@ class Assets {
   /// Assets for imagesUpgradeToPro
   /// assets/images/upgrade_to_pro.svg
   static const String imagesUpgradeToPro = "assets/images/upgrade_to_pro.svg";
+
+  /// Assets for imagesUploadBackground
+  /// assets/images/upload_background.svg
+  static const String imagesUploadBackground = "assets/images/upload_background.svg";
+
+  /// Assets for imagesUploadIcon
+  /// assets/images/upload_icon.svg
+  static const String imagesUploadIcon = "assets/images/upload_icon.svg";
 }
 

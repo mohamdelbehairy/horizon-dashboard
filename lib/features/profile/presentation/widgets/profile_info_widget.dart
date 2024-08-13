@@ -13,16 +13,27 @@ class ProfileInfoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBackground(
       backgroundModel: BackgroundModel(
-          child: const Column(
-        children: [
-          ProfileImageStack(),
-          SizedBox(height: 38),
-          ProfileName(),
-          SizedBox(height: 32),
-          ProfileDetailsListView(),
-          SizedBox(height: 24),
-        ],
-      )),
+          height: MediaQuery.sizeOf(context).width > 1700 ? 360 : 300,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                const ProfileImageStack(),
+                const SizedBox(height: 38),
+                const ProfileName(),
+                if (MediaQuery.sizeOf(context).width > 1700 ||
+                    MediaQuery.sizeOf(context).width < 1600)
+                  const SizedBox(height: 32),
+                if (MediaQuery.sizeOf(context).width < 1700 &&
+                    MediaQuery.sizeOf(context).width >= 1600)
+                  const SizedBox(height: 12),
+                if (MediaQuery.sizeOf(context).width <= 1400)
+                  const SizedBox(height: 8),
+                const ProfileDetailsListView(),
+                if (MediaQuery.sizeOf(context).width > 1700)
+                  const SizedBox(height: 24),
+              ],
+            ),
+          )),
     );
   }
 }
