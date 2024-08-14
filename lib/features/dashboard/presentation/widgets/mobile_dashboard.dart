@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../main_dashboard/presentation/views/main_dashboard_mobile.dart';
+import '../../../profile/presentation/views/profile_mobile.dart';
 import 'custom_bloc_consumber_drawer.dart';
 
 class MobileDashboard extends StatelessWidget {
@@ -17,10 +18,11 @@ class MobileDashboard extends StatelessWidget {
             market: (context) => Container(color: Colors.red),
             tables: (context) => Container(color: Colors.blue),
             kanban: (context) => Container(color: Colors.green),
-            profile: (context) => Container(color: Colors.yellow),
+            profile: (context) => const ProfileMobile(),
           ),
         ),
       ],
     );
   }
 }
+

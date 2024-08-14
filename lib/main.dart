@@ -6,7 +6,6 @@ import 'package:horizon/features/dashboard/presentation/views/dashboard_view.dar
 import 'package:horizon/features/profile/data/manager/switch/switch_cubit.dart';
 
 void main() {
-  // CachedSvg.svgPrecacheImage();
   runApp(DevicePreview(
     enabled: false,
     builder: (context) => const Horizon(),

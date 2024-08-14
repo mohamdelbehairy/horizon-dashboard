@@ -15,7 +15,8 @@ class GeneralInformationItem extends StatelessWidget {
         child: ListTile(
             title: Text(profileListTileModel.title,
                 style: Styles.medium14(context)),
-            subtitle: MediaQuery.sizeOf(context).width >= 1300
+            subtitle: MediaQuery.sizeOf(context).width >= 1300 ||
+                    MediaQuery.sizeOf(context).width <= 800
                 ? FittedBox(
                     child: Text(profileListTileModel.subtitle!,
                         style: Styles.bold16(context)
