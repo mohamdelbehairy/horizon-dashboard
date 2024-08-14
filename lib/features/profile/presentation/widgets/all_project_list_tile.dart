@@ -5,11 +5,11 @@ import 'package:horizon/core/utils/styles.dart';
 import 'package:horizon/core/widgets/custom_card.dart';
 import 'package:horizon/core/widgets/custom_svg_picture.dart';
 
-import '../../data/models/all_prokect_list_tile_model.dart';
+import '../../data/models/profile_list_tile_model.dart';
 
 class AllProjectsListTile extends StatelessWidget {
   const AllProjectsListTile({super.key, required this.allProkectListTileModel});
-  final AllProkectListTileModel allProkectListTileModel;
+  final ProfileListTileModel allProkectListTileModel;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class AllProjectsListTile extends StatelessWidget {
         child: Padding(
       padding: const EdgeInsets.symmetric(vertical: 16),
       child: ListTile(
-        leading: Image.asset(allProkectListTileModel.image),
+        leading: Image.asset(allProkectListTileModel.image!),
         title: FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(allProkectListTileModel.title,

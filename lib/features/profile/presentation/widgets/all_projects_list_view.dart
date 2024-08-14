@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/core/utils/assets.dart';
-import 'package:horizon/features/profile/data/models/all_prokect_list_tile_model.dart';
+import 'package:horizon/features/profile/data/models/profile_list_tile_model.dart';
 import 'package:horizon/features/profile/presentation/widgets/all_project_list_tile.dart';
 
 class AllProjectsListView extends StatelessWidget {
@@ -9,15 +9,15 @@ class AllProjectsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List items = [
-      AllProkectListTileModel(
+      ProfileListTileModel(
           title: 'Technology behind the Blockchain',
           subtitle: 'Project #1',
           image: Assets.imagesTechnology),
-      AllProkectListTileModel(
+      ProfileListTileModel(
           title: 'Greatest way to a good Economy',
           subtitle: 'Project #2',
           image: Assets.imagesGreatest),
-      AllProkectListTileModel(
+      ProfileListTileModel(
           title: 'Most essential tips for Burnout',
           subtitle: 'Project #3',
           image: Assets.imagesMostEssential),
@@ -25,8 +25,10 @@ class AllProjectsListView extends StatelessWidget {
     return Column(
       children: List.generate(
           items.length,
-          (index) =>
-              AllProjectsListTile(allProkectListTileModel: items[index])),
+          (index) => Padding(
+              padding: const EdgeInsets.only(top: 12),
+              child:
+                  AllProjectsListTile(allProkectListTileModel: items[index]))),
     );
   }
 }
