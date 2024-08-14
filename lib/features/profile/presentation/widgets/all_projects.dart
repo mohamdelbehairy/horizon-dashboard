@@ -13,16 +13,18 @@ class AllProjects extends StatelessWidget {
     return CustomBackground(
       backgroundModel: BackgroundModel(
         height: MediaQuery.sizeOf(context).width > 1600 ? 500 : 480,
-        child: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ProfileHeader(
-                title: 'All Projects',
-                subTitle:
-                    'Here you can find more details about your projects. Keep you\n user engaged by providing meaningful information.'),
-            SizedBox(height: 16),
-            AllProjectsListView(),
-          ],
+        child: const SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ProfileHeader(
+                  title: 'All Projects',
+                  subTitle:
+                      'Here you can find more details about your projects. Keep you\n user engaged by providing meaningful information.'),
+              SizedBox(height: 16),
+              AllProjectsListView(),
+            ],
+          ),
         ),
       ),
     );

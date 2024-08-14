@@ -13,12 +13,16 @@ class GeneralInformationItem extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: ListTile(
-          title:
-              Text(profileListTileModel.title, style: Styles.medium14(context)),
-          subtitle: Text(profileListTileModel.subtitle!,
-              style:
-                  Styles.bold16(context).copyWith(fontWeight: FontWeight.w400)),
-        ),
+            title: Text(profileListTileModel.title,
+                style: Styles.medium14(context)),
+            subtitle: MediaQuery.sizeOf(context).width >= 1300
+                ? FittedBox(
+                    child: Text(profileListTileModel.subtitle!,
+                        style: Styles.bold16(context)
+                            .copyWith(fontWeight: FontWeight.w400)))
+                : Text(profileListTileModel.subtitle!,
+                    style: Styles.bold16(context)
+                        .copyWith(fontWeight: FontWeight.w400))),
       ),
     );
   }

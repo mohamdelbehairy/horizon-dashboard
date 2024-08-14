@@ -28,12 +28,14 @@ class DesktopOrTabletCopyRightWidget extends StatelessWidget {
 }
 
 class MobileCopyRightWidget extends StatelessWidget {
-  const MobileCopyRightWidget({super.key});
+  const MobileCopyRightWidget(
+      {super.key, this.mainAxisAlignment = MainAxisAlignment.center});
+  final MainAxisAlignment mainAxisAlignment;
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: mainAxisAlignment,
       children: [
         Flexible(
           child: FittedBox(

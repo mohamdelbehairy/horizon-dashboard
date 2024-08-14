@@ -23,4 +23,3 @@ class UploadFilesStack extends StatelessWidget {
     );
   }
 }
-

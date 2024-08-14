@@ -21,7 +21,9 @@ class ProfileInfoWidget extends StatelessWidget {
                 const SizedBox(height: 38),
                 const ProfileName(),
                 if (MediaQuery.sizeOf(context).width > 1700 ||
-                    MediaQuery.sizeOf(context).width < 1600)
+                    (MediaQuery.sizeOf(context).width < 1600 &&
+                        MediaQuery.sizeOf(context).width > 1300) ||
+                    MediaQuery.sizeOf(context).width < 900)
                   const SizedBox(height: 32),
                 if (MediaQuery.sizeOf(context).width < 1700 &&
                     MediaQuery.sizeOf(context).width >= 1600)

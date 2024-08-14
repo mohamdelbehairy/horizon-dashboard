@@ -14,7 +14,13 @@ class FooterRightWidget extends StatelessWidget {
     ];
     return Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: List.generate(items.length,
-            (index) => Text(items[index], style: Styles.medium14(context))));
+        children: List.generate(
+            items.length,
+            (index) => Flexible(
+                  child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child:
+                          Text(items[index], style: Styles.medium14(context))),
+                )));
   }
 }

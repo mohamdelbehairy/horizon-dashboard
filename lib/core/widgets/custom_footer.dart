@@ -15,7 +15,7 @@ class CustomFooter extends StatelessWidget {
             flex: 2,
             child: Padding(
               padding: EdgeInsets.only(left: 16),
-              child: DesktopOrTabletCopyRightWidget(
+              child: MobileCopyRightWidget(
                   mainAxisAlignment: MainAxisAlignment.start),
             )),
         Expanded(

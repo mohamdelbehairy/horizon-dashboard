@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:horizon/core/widgets/custom_scroll_view_dashboard.dart';
 import '../../../../core/widgets/custom_app_bar.dart';
 import '../../../charts/presentation/widgets/charts_widget.dart';
 import '../../../dashboard/presentation/widgets/total_spent_widget.dart';
@@ -15,40 +16,27 @@ class MainDashboardTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
-      slivers: [
-        SliverFillRemaining(
-            hasScrollBody: false,
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  CustomAppBar(title: 'Dashboard'),
-                  SizedBox(height: 16),
-                  MainDashboardListView(),
-                  SizedBox(height: 24),
-                  TotalSpentWidget(),
-                  SizedBox(height: 16),
-                  WeeklyRevenue(),
-                  SizedBox(height: 16),
-                  CheckTableWidget(),
-                  SizedBox(height: 16),
-                  ChartsWidget(),
-                  SizedBox(height: 16),
-                  ComplexTableWidget(),
-                  SizedBox(height: 16),
-                  TasksWidget(),
-                  SizedBox(height: 16),
-                  BussinessDesignAndTeamMember(),
-                  SizedBox(height: 16),
-                  SecurityAndStarbucksSection(),
-                  SizedBox(height: 16),
-                ],
-              ),
-            )),
-      ],
-    );
+    return const CustomScrollViewDashboard(children: [
+      CustomAppBar(title: 'Dashboard'),
+      SizedBox(height: 16),
+      MainDashboardListView(),
+      SizedBox(height: 24),
+      TotalSpentWidget(),
+      SizedBox(height: 16),
+      WeeklyRevenue(),
+      SizedBox(height: 16),
+      CheckTableWidget(),
+      SizedBox(height: 16),
+      ChartsWidget(),
+      SizedBox(height: 16),
+      ComplexTableWidget(),
+      SizedBox(height: 16),
+      TasksWidget(),
+      SizedBox(height: 16),
+      BussinessDesignAndTeamMember(),
+      SizedBox(height: 16),
+      SecurityAndStarbucksSection(),
+      SizedBox(height: 16),
+    ]);
   }
 }
-
