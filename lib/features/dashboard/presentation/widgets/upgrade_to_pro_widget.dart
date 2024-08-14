@@ -19,16 +19,16 @@ class UpgradeToProWidget extends StatelessWidget {
             top: -40,
             child: CircleAvatar(radius: 40, backgroundColor: Colors.white)),
         Positioned(
-            right: 0.0,
-            left: 0.0,
-            top: -35,
-            child: CircleAvatar(
-              radius: 35,
-              backgroundColor: const Color(0xff4318FF),
-              child: SvgPicture.asset(Assets.imagesUpgradeToPro),
-            )),
+          right: 0.0,
+          left: 0.0,
+          top: -35,
+          child: CircleAvatar(
+            radius: 35,
+            backgroundColor: const Color(0xff4318FF),
+            child: SvgPicture.asset(Assets.imagesUpgradeToPro),
+          ),
+        ),
       ],
     );
   }
 }
-

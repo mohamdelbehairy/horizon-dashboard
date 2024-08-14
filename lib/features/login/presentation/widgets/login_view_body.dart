@@ -27,7 +27,7 @@ class LoginViewBody extends StatelessWidget {
                 width: MediaQuery.sizeOf(context).width - 32,
                 child: const MobileCopyRightWidget()),
           if (MediaQuery.sizeOf(context).width >= 800)
-            const DestopOrTabletCopyRightWidget(),
+            const DesktopOrTabletCopyRightWidget(),
           const SizedBox(height: 30),
         ],
       ),
