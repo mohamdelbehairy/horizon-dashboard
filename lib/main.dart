@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:horizon/features/dashboard/data/manager/drawer/drawer_cubit.dart';
 import 'package:horizon/features/dashboard/presentation/views/dashboard_view.dart';
+import 'package:horizon/features/profile/data/manager/switch/switch_cubit.dart';
 
 void main() {
   // CachedSvg.svgPrecacheImage();
@@ -17,8 +18,11 @@ class Horizon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => DrawerCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => DrawerCubit()),
+        BlocProvider(create: (context) => SwitchCubit()),
+      ],
       child: MaterialApp(
         locale: DevicePreview.locale(context),
         builder: DevicePreview.appBuilder,

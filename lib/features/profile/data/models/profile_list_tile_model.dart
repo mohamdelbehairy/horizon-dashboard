@@ -1,7 +1,6 @@
 class ProfileListTileModel {
-  final String title, subtitle;
-  final String? image;
+  final String title;
+  final String? subtitle, image;
 
-  ProfileListTileModel(
-      {required this.title, required this.subtitle, this.image});
+  ProfileListTileModel({required this.title, this.subtitle, this.image});
 }

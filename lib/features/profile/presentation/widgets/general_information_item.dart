@@ -15,7 +15,7 @@ class GeneralInformationItem extends StatelessWidget {
         child: ListTile(
           title:
               Text(profileListTileModel.title, style: Styles.medium14(context)),
-          subtitle: Text(profileListTileModel.subtitle,
+          subtitle: Text(profileListTileModel.subtitle!,
               style:
                   Styles.bold16(context).copyWith(fontWeight: FontWeight.w400)),
         ),
