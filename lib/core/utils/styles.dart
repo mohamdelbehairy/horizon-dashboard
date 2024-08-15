@@ -17,6 +17,14 @@ class Styles {
         fontFamily: 'DM Sans');
   }
 
+  static TextStyle bold10(BuildContext context) {
+    return TextStyle(
+        fontSize: getResponsiveFontSize(context, fontSize: 10),
+        color: Colors.white,
+        fontWeight: FontWeight.w700,
+        fontFamily: 'DM Sans');
+  }
+
   static TextStyle medium16(BuildContext context) {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 16),

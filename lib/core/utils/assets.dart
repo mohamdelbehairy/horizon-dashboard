@@ -37,6 +37,14 @@ class Assets {
   /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";
 
+  /// Assets for imagesDashboardBuilder
+  /// assets/images/dashboard_builder.png
+  static const String imagesDashboardBuilder = "assets/images/dashboard_builder.png";
+
+  /// Assets for imagesDashboardDesign
+  /// assets/images/dashboard_design.png
+  static const String imagesDashboardDesign = "assets/images/dashboard_design.png";
+
   /// Assets for imagesDates
   /// assets/images/dates.svg
   static const String imagesDates = "assets/images/dates.svg";
@@ -113,6 +121,10 @@ class Assets {
   /// assets/images/notification.svg
   static const String imagesNotification = "assets/images/notification.svg";
 
+  /// Assets for imagesOneImage
+  /// assets/images/one_image.png
+  static const String imagesOneImage = "assets/images/one_image.png";
+
   /// Assets for imagesOr
   /// assets/images/or.svg
   static const String imagesOr = "assets/images/or.svg";
@@ -181,6 +193,10 @@ class Assets {
   /// assets/images/technology.png
   static const String imagesTechnology = "assets/images/technology.png";
 
+  /// Assets for imagesThreeImage
+  /// assets/images/three_image.png
+  static const String imagesThreeImage = "assets/images/three_image.png";
+
   /// Assets for imagesTimer
   /// assets/images/timer.svg
   static const String imagesTimer = "assets/images/timer.svg";
@@ -192,6 +208,10 @@ class Assets {
   /// Assets for imagesTotalSpent
   /// assets/images/total_spent.svg
   static const String imagesTotalSpent = "assets/images/total_spent.svg";
+
+  /// Assets for imagesTwoImage
+  /// assets/images/two_image.png
+  static const String imagesTwoImage = "assets/images/two_image.png";
 
   /// Assets for imagesUpgradeToPro
   /// assets/images/upgrade_to_pro.svg

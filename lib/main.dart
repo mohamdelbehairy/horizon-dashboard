@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:horizon/features/dashboard/data/manager/drawer/drawer_cubit.dart';
 import 'package:horizon/features/dashboard/presentation/views/dashboard_view.dart';
+import 'package:horizon/features/kanban/data/manager/kanban/kanban_cubit.dart';
 import 'package:horizon/features/profile/data/manager/switch/switch_cubit.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class Horizon extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => DrawerCubit()),
         BlocProvider(create: (context) => SwitchCubit()),
+        BlocProvider(create: (context)=>KanbanCubit())
       ],
       child: MaterialApp(
         locale: DevicePreview.locale(context),

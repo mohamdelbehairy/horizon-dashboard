@@ -10,7 +10,11 @@ class TextFieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.only(top: 8, bottom: 8, left: 8, right: 8),
+        padding: EdgeInsets.only(
+            top: MediaQuery.sizeOf(context).width > 1645 ? 2 : 6,
+            bottom: MediaQuery.sizeOf(context).width > 1645 ? 2 : 6,
+            left: 8,
+            right: 8),
         decoration: BoxDecoration(
             color: Colors.white, borderRadius: BorderRadius.circular(60)),
         child: const Row(
