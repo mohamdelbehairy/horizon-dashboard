@@ -8,7 +8,7 @@ import 'package:horizon/features/profile/data/manager/switch/switch_cubit.dart';
 
 void main() {
   runApp(DevicePreview(
-    enabled: false,
+    enabled: true,
     builder: (context) => const Horizon(),
   ));
 }

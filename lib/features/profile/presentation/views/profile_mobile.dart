@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/core/widgets/custom_app_bar.dart';
 
+import '../../../login/presentation/widgets/copy_right_widget.dart';
 import '../widgets/all_projects.dart';
 import '../widgets/general_information.dart';
 import '../widgets/profile_info_widget.dart';
@@ -18,7 +19,7 @@ class ProfileMobile extends StatelessWidget {
         CustomAppBar(title: 'Profile'),
         SizedBox(height: 16),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 12),
           child: Column(
             children: [
               ProfileInfoWidget(),
@@ -34,6 +35,7 @@ class ProfileMobile extends StatelessWidget {
           ),
         ),
         SizedBox(height: 16),
+        MobileCopyRightWidget()
       ],
     );
   }

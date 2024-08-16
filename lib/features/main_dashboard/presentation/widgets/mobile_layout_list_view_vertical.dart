@@ -18,7 +18,7 @@ class MobileLayoutListViewVertical extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: EdgeInsets.symmetric(horizontal: 12),
       child: Column(
         children: [
           TotalSpentWidget(),

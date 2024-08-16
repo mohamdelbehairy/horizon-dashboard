@@ -13,7 +13,8 @@ class KanbanItem extends StatelessWidget {
     return Container(
       // height: 180,
       width: 466,
-      margin: const EdgeInsets.symmetric(horizontal: 4),
+      margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.sizeOf(context).width < 800 ? 0.0 : 4),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(15),
@@ -25,8 +26,11 @@ class KanbanItem extends StatelessWidget {
                 offset: const Offset(0.0, 4.0))
           ]),
       child: Padding(
-        padding:
-            const EdgeInsets.only(left: 24, right: 24, top: 24, bottom: 16),
+        padding: EdgeInsets.only(
+            left: MediaQuery.sizeOf(context).width < 800 ? 16 : 24,
+            right: MediaQuery.sizeOf(context).width < 800 ? 16 : 24,
+            top: MediaQuery.sizeOf(context).width < 800 ? 16 : 24,
+            bottom: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

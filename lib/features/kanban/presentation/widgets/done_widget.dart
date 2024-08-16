@@ -19,9 +19,28 @@ class DoneWidget extends StatelessWidget {
         left: 16,
         top: 16,
         bottom: 0.0,
-        height: MediaQuery.sizeOf(context).width <= 1500 ? 870 : 920,
+        height: MediaQuery.sizeOf(context).width < 1300 &&
+                MediaQuery.sizeOf(context).width > 800
+            ? 980
+            : MediaQuery.sizeOf(context).width <= 1725 &&
+                    MediaQuery.sizeOf(context).width >= 1600
+                ? 900
+                : (MediaQuery.sizeOf(context).width < 1600 &&
+                            MediaQuery.sizeOf(context).width >= 1540) ||
+                        (MediaQuery.sizeOf(context).width < 1420 &&
+                            MediaQuery.sizeOf(context).width >= 1380)
+                    ? 880
+                    : (MediaQuery.sizeOf(context).width < 1540 &&
+                                MediaQuery.sizeOf(context).width >= 1420) ||
+                            (MediaQuery.sizeOf(context).width < 1380 &&
+                                MediaQuery.sizeOf(context).width >= 1300)
+                        ? 860
+                        : 940,
         width: width,
         child: SingleChildScrollView(
+          physics: MediaQuery.sizeOf(context).width > 800
+              ? const BouncingScrollPhysics()
+              : const NeverScrollableScrollPhysics(),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
