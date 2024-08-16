@@ -14,7 +14,7 @@ class DevelopmentTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var teable = context.read<TablesCubit>();
+    var table = context.read<TablesCubit>();
     return CustomBackground(
       backgroundModel: BackgroundModel(
           child: Column(
@@ -26,7 +26,7 @@ class DevelopmentTable extends StatelessWidget {
                   child: const Icon(FontAwesomeIcons.ellipsis,
                       color: Color(0xff4318FF)))),
           const SizedBox(height: 16),
-           CustomTableWidget(tablesBody: teable.developmentBody),
+           CustomTableWidget(tablesBody: table.developmentBody),
         ],
       )),
     );

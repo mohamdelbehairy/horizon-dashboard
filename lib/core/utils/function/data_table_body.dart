@@ -11,7 +11,8 @@ List<DataRow> dataTablesBody(
       dataCellText(
           context: context,
           text: tablesBody[index].title,
-          value: tablesBody[index].value),
+          value: tablesBody[index].value,
+          length: tablesBody.length),
       if (tablesBody[index].image1 != null) dateCellImage(tablesBody[index]),
       if (tablesBody[index].image1 != null)
         dataCellText(context: context, text: tablesBody[index].dateTime),
