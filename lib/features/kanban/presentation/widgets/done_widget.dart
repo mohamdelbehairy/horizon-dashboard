@@ -8,7 +8,8 @@ import 'kanban_header.dart';
 import 'kanban_list_view.dart';
 
 class DoneWidget extends StatelessWidget {
-  const DoneWidget({super.key});
+  const DoneWidget({super.key, this.width});
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +20,10 @@ class DoneWidget extends StatelessWidget {
         top: 16,
         bottom: 0.0,
         height: MediaQuery.sizeOf(context).width <= 1500 ? 870 : 920,
+        width: width,
         child: SingleChildScrollView(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               const KanbanHeader(text: 'Done'),
               const SizedBox(height: 24),
