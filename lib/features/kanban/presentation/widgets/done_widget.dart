@@ -20,22 +20,31 @@ class DoneWidget extends StatelessWidget {
         top: 16,
         bottom: 0.0,
         height: MediaQuery.sizeOf(context).width < 1300 &&
-                MediaQuery.sizeOf(context).width > 800
+                MediaQuery.sizeOf(context).width > 1024
             ? 980
-            : MediaQuery.sizeOf(context).width <= 1725 &&
-                    MediaQuery.sizeOf(context).width >= 1600
+            : (MediaQuery.sizeOf(context).width <= 1725 &&
+                        MediaQuery.sizeOf(context).width >= 1600) ||
+                    MediaQuery.sizeOf(context).width == 428 ||
+                    (MediaQuery.sizeOf(context).width <= 1024 &&
+                        MediaQuery.sizeOf(context).width >= 800)
                 ? 900
                 : (MediaQuery.sizeOf(context).width < 1600 &&
                             MediaQuery.sizeOf(context).width >= 1540) ||
                         (MediaQuery.sizeOf(context).width < 1420 &&
-                            MediaQuery.sizeOf(context).width >= 1380)
+                            MediaQuery.sizeOf(context).width >= 1380) ||
+                        MediaQuery.sizeOf(context).width == 390 ||
+                        (MediaQuery.sizeOf(context).width >= 410 &&
+                            MediaQuery.sizeOf(context).width < 480 &&
+                            MediaQuery.sizeOf(context).width != 428)
                     ? 880
                     : (MediaQuery.sizeOf(context).width < 1540 &&
                                 MediaQuery.sizeOf(context).width >= 1420) ||
                             (MediaQuery.sizeOf(context).width < 1380 &&
                                 MediaQuery.sizeOf(context).width >= 1300)
                         ? 860
-                        : 940,
+                        : MediaQuery.sizeOf(context).width < 390
+                            ? 855
+                            : 940,
         width: width,
         child: SingleChildScrollView(
           physics: MediaQuery.sizeOf(context).width > 800
