@@ -3,12 +3,12 @@ import 'package:horizon/core/widgets/custom_app_bar.dart';
 import 'package:horizon/core/widgets/custom_footer.dart';
 
 import '../../../../core/widgets/custom_scroll_view_dashboard.dart';
-import '../widgets/all_projects.dart';
-import '../widgets/general_information.dart';
-import '../widgets/profile_info_widget.dart';
-import '../widgets/profile_notification.dart';
-import '../widgets/profile_storge.dart';
-import '../widgets/profile_upload_files.dart';
+import 'widgets/all_projects.dart';
+import 'widgets/general_information.dart';
+import 'widgets/profile_info_widget.dart';
+import 'widgets/profile_notification.dart';
+import 'widgets/profile_storge.dart';
+import 'widgets/profile_upload_files.dart';
 
 class ProfileTablet extends StatelessWidget {
   const ProfileTablet({super.key});

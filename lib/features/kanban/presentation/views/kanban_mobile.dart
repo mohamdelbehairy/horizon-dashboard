@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import '../../../../core/widgets/custom_app_bar.dart';
 import '../../../login/presentation/widgets/copy_right_widget.dart';
-import '../widgets/backlog_widget.dart';
-import '../widgets/done_widget.dart';
-import '../widgets/inprogress_widget.dart';
+import 'widgets/backlog_widget.dart';
+import 'widgets/done_widget.dart';
+import 'widgets/inprogress_widget.dart';
 
 class KanbanMobile extends StatelessWidget {
   const KanbanMobile({super.key});

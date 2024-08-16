@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/core/utils/styles.dart';
 
-import '../../features/dashboard/presentation/widgets/text_field_widget.dart';
+import '../../features/dashboard/presentation/views/widgets/text_field_widget.dart';
 
 class DashboardTitleSection extends StatelessWidget {
   const DashboardTitleSection({super.key, required this.title});

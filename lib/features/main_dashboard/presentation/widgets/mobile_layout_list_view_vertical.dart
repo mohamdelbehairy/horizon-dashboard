@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../charts/presentation/widgets/my_bar_chart.dart';
 import '../../../charts/presentation/widgets/my_pie_chart.dart';
-import '../../../dashboard/presentation/widgets/total_spent_widget.dart';
-import '../../../dashboard/presentation/widgets/weekly_revenue.dart';
+import '../../../dashboard/presentation/views/widgets/total_spent_widget.dart';
+import '../../../dashboard/presentation/views/widgets/weekly_revenue.dart';
 import '../../../table/presentation/widgets/check_table_widget.dart';
 import '../../../table/presentation/widgets/complex_table_widget.dart';
 import '../../../tasks/presentation/widgets/tasks_widget.dart';

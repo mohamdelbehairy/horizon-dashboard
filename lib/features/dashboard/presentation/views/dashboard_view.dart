@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/core/widgets/adaptive_layout_widget.dart';
-import 'package:horizon/features/dashboard/presentation/widgets/custom_drawer.dart';
+import 'package:horizon/features/dashboard/presentation/views/widgets/custom_drawer.dart';
 
-import '../widgets/mobile_dashboard.dart';
-import '../widgets/dashboard_view_appbar.dart';
-import '../widgets/desktop_dashboard.dart';
-import '../widgets/tablet_dashboard.dart';
+import 'widgets/mobile_dashboard.dart';
+import 'widgets/dashboard_view_appbar.dart';
+import 'widgets/desktop_dashboard.dart';
+import 'widgets/tablet_dashboard.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({super.key});

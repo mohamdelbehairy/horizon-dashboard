@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:horizon/core/widgets/custom_app_bar.dart';
 
 import '../../../login/presentation/widgets/copy_right_widget.dart';
-import '../widgets/all_projects.dart';
-import '../widgets/general_information.dart';
-import '../widgets/profile_info_widget.dart';
-import '../widgets/profile_notification.dart';
-import '../widgets/profile_storge.dart';
+import 'widgets/all_projects.dart';
+import 'widgets/general_information.dart';
+import 'widgets/profile_info_widget.dart';
+import 'widgets/profile_notification.dart';
+import 'widgets/profile_storge.dart';
 
 class ProfileMobile extends StatelessWidget {
   const ProfileMobile({super.key});

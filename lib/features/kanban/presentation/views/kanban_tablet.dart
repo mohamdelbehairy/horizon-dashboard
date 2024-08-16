@@ -3,9 +3,9 @@ import 'package:horizon/core/widgets/custom_footer.dart';
 
 import '../../../../core/widgets/custom_app_bar.dart';
 import '../../../../core/widgets/custom_scroll_view_dashboard.dart';
-import '../widgets/backlog_widget.dart';
-import '../widgets/done_widget.dart';
-import '../widgets/inprogress_widget.dart';
+import 'widgets/backlog_widget.dart';
+import 'widgets/done_widget.dart';
+import 'widgets/inprogress_widget.dart';
 
 class KanbanTablet extends StatelessWidget {
   const KanbanTablet({super.key});
