@@ -15,7 +15,7 @@ class TablesCubit extends Cubit<TablesState> {
     Assets.imagesTablesTitle,
   ];
 
-  List<TablesBodyModel> tablesBody = [
+  List<TablesBodyModel> developmentBody = [
     TablesBodyModel(
         title: 'Marketplace',
         image1: Assets.imagesApple,
@@ -45,43 +45,101 @@ class TablesCubit extends Cubit<TablesState> {
         title: 'Uranus',
         image1: Assets.imagesAndroid,
         image2: Assets.imagesWindows,
-        dateTime: '21.Sep.2021',
+        dateTime: '17.Dec.2021',
         persentage: '12.2%'),
     TablesBodyModel(
         title: 'Uranus',
         image1: Assets.imagesAndroid,
         image2: Assets.imagesWindows,
-        dateTime: '21.Sep.2021',
+        dateTime: '17.Dec.2021',
         persentage: '12.2%'),
     TablesBodyModel(
         title: 'Uranus',
         image1: Assets.imagesAndroid,
         image2: Assets.imagesWindows,
-        dateTime: '21.Sep.2021',
+        dateTime: '17.Dec.2021',
         persentage: '12.2%'),
     TablesBodyModel(
         title: 'Uranus',
         image1: Assets.imagesAndroid,
         image2: Assets.imagesWindows,
-        dateTime: '21.Sep.2021',
+        dateTime: '17.Dec.2021',
         persentage: '12.2%'),
     TablesBodyModel(
         title: 'Uranus',
         image1: Assets.imagesAndroid,
         image2: Assets.imagesWindows,
-        dateTime: '21.Sep.2021',
+        dateTime: '17.Dec.2021',
         persentage: '12.2%'),
     TablesBodyModel(
         title: 'Uranus',
         image1: Assets.imagesAndroid,
         image2: Assets.imagesWindows,
-        dateTime: '21.Sep.2021',
+        dateTime: '17.Dec.2021',
         persentage: '12.2%'),
     TablesBodyModel(
         title: 'Uranus',
         image1: Assets.imagesAndroid,
         image2: Assets.imagesWindows,
-        dateTime: '21.Sep.2021',
+        dateTime: '17.Dec.2021',
         persentage: '12.2%'),
+  ];
+
+  List<TablesBodyModel> checkBody = [
+    TablesBodyModel(
+        title: 'Marketplace',
+        dateTime: '24.Jan.2021',
+        persentage: '17.5%',
+        value: '2.458'),
+    TablesBodyModel(
+        title: 'Venus DB PRO',
+        dateTime: '12.Jun.2021',
+        persentage: '10.8%',
+        value: '1.485'),
+    TablesBodyModel(
+        title: 'Uranus Kit',
+        dateTime: '5.Jan.2021',
+        persentage: '21.3%',
+        value: '1.024'),
+    TablesBodyModel(
+        title: 'Venus DS',
+        dateTime: '7.Mar.2021',
+        persentage: '100%',
+        value: '858'),
+    TablesBodyModel(
+        title: 'Venus 3D Asset',
+        dateTime: '17.Dec.2021',
+        persentage: '31.5%',
+        value: '258'),
+    TablesBodyModel(
+        title: 'Venus 3D Asset',
+        dateTime: '17.Dec.2021',
+        persentage: '12.2%',
+        value: '258'),
+    TablesBodyModel(
+        title: 'Venus 3D Asset',
+        dateTime: '17.Dec.2021',
+        persentage: '12.2%',
+        value: '258'),
+    TablesBodyModel(
+        title: 'Venus 3D Asset',
+        dateTime: '17.Dec.2021',
+        persentage: '12.2%',
+        value: '258'),
+    TablesBodyModel(
+        title: 'Venus 3D Asset',
+        dateTime: '17.Dec.2021',
+        persentage: '12.2%',
+        value: '258'),
+    TablesBodyModel(
+        title: 'Venus 3D Asset',
+        dateTime: '17.Dec.2021',
+        persentage: '12.2%',
+        value: '258'),
+    TablesBodyModel(
+        title: 'Venus 3D Asset',
+        dateTime: '17.Dec.2021',
+        persentage: '12.2%',
+        value: '258'),
   ];
 }

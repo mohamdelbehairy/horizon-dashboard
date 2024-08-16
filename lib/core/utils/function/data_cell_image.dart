@@ -6,9 +6,10 @@ import '../../../features/tables/data/models/tables_model.dart';
 
 DataCell dateCellImage(TablesBodyModel tablesBodyModel) {
   return DataCell(Row(
-    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
-      CustomSvgPicture(svg: SvgModel(image: tablesBodyModel.image1, hight: 22)),
+      if (tablesBodyModel.image1 != null)
+        CustomSvgPicture(
+            svg: SvgModel(image: tablesBodyModel.image1!, hight: 22)),
       const SizedBox(width: 16),
       if (tablesBodyModel.image2 != null)
         CustomSvgPicture(
