@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:horizon/features/tables/data/models/tables_model.dart';
-import '../../../../core/utils/function/data_table_body.dart';
-import '../../../../core/utils/function/data_tables_title.dart';
+import '../../../../../core/utils/function/data_table_body.dart';
+import '../../../../../core/utils/function/data_tables_title.dart';
 
 class TableItem extends StatelessWidget {
   const TableItem({super.key, required this.tablesBody});

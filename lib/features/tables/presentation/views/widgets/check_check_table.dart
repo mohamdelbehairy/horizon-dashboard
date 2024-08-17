@@ -3,14 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:horizon/core/models/background_model.dart';
 import 'package:horizon/core/widgets/custom_background.dart';
-import 'package:horizon/core/widgets/custom_background_header.dart';
-import 'package:horizon/features/tables/presentation/manager/tables/tables_cubit.dart';
-import 'package:horizon/features/tables/presentation/widgets/custom_table_widget.dart';
 
-import '../../../../core/models/background_header_model.dart';
+import '../../../../../core/models/background_header_model.dart';
+import '../../../../../core/widgets/custom_background_header.dart';
+import '../../manager/tables/tables_cubit.dart';
+import 'custom_table_widget.dart';
 
-class ComplexComplexTable extends StatelessWidget {
-  const ComplexComplexTable({super.key});
+class CheckCheckTable extends StatelessWidget {
+  const CheckCheckTable({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +22,11 @@ class ComplexComplexTable extends StatelessWidget {
         children: [
           CustomBackgroundHeader(
               backgroundHeaderModel: BackgroundHeaderModel(
-                  title: 'Complex Table',
+                  title: 'Check Table',
                   child: const Icon(FontAwesomeIcons.ellipsis,
                       color: Color(0xff4318FF)))),
-          const SizedBox(height: 24),
-          CustomTableWidget(tablesBody: table.complexBody),
+          const SizedBox(height: 16),
+          CustomTableWidget(tablesBody: table.checkBody),
         ],
       )),
     );

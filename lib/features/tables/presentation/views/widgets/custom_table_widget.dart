@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:horizon/features/tables/presentation/manager/tables/tables_cubit.dart';
 
-import '../../data/models/tables_model.dart';
+import '../../../data/models/tables_model.dart';
 import 'table_item.dart';
 
 class CustomTableWidget extends StatelessWidget {

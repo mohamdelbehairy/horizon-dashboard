@@ -10,7 +10,9 @@ List<DataColumn> dataTablesTitle(BuildContext context) {
   var tablesTitle = context.read<TablesCubit>().tablesTitle;
   return List.generate(tablesTitle.length, (index) {
     return DataColumn(
-        label:
-            CustomSvgPicture(svg: SvgModel(image: Assets.imagesTablesTitle)));
+        label: CustomSvgPicture(
+            svg: SvgModel(
+                image: Assets.imagesTablesTitle,
+                hight: MediaQuery.sizeOf(context).width < 800 ? 40 : null)));
   });
 }

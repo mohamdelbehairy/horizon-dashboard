@@ -15,9 +15,11 @@ DataCell dataCellText(
       if (value != null && length != null && length > 5)
         const SizedBox(width: 12),
       Text(text,
-          style: textStatus != null
-              ? Styles.bold16(context)
-              : Styles.bold14(context)),
+          style: MediaQuery.sizeOf(context).width < 800
+              ? Styles.bold20(context).copyWith(fontSize: 22)
+              : textStatus != null
+                  ? Styles.bold16(context)
+                  : Styles.bold14(context)),
     ],
   ));
 }

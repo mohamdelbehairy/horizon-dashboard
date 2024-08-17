@@ -172,7 +172,7 @@ class TablesCubit extends Cubit<TablesState> {
         value: '258'),
   ];
 
-  List<TablesBodyModel> complexBody = [
+  List<TablesBodyModel> tableComplexTable = [
     TablesBodyModel(
         title: 'Marketplace',
         dateTime: '24.Jan.2021',
