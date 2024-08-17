@@ -6,14 +6,18 @@ DataCell dataCellText(
     {required BuildContext context,
     required String text,
     String? value,
-    int? length}) {
+    int? length,
+    String? textStatus}) {
   return DataCell(Row(
     children: [
       if (value != null && length != null && length > 5)
         const CustomSelectItem(),
       if (value != null && length != null && length > 5)
         const SizedBox(width: 12),
-      Text(text, style: Styles.bold14(context)),
+      Text(text,
+          style: textStatus != null
+              ? Styles.bold16(context)
+              : Styles.bold14(context)),
     ],
   ));
 }

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:horizon/core/utils/assets.dart';
 
@@ -169,5 +170,50 @@ class TablesCubit extends Cubit<TablesState> {
         dateTime: '17.Dec.2021',
         persentage: '12.2%',
         value: '258'),
+  ];
+
+  List<TablesBodyModel> complexBody = [
+    TablesBodyModel(
+        title: 'Marketplace',
+        dateTime: '24.Jan.2021',
+        iconStatus: Icons.done,
+        textStatus: 'Approved',
+        colorStatus: const Color(0xff05CD99),
+        complexProgress: Assets.imagesMarketplace),
+    TablesBodyModel(
+        title: 'Venus Dashboard Builder',
+        dateTime: '30.Dec.2021',
+        iconStatus: Icons.close,
+        textStatus: 'Disable',
+        colorStatus: const Color(0xffEE5D50),
+        complexProgress: Assets.imagesVenusdashboardbuilder),
+    TablesBodyModel(
+        title: 'Venus Design System',
+        dateTime: '20.May.2021',
+        iconStatus: Icons.priority_high,
+        textStatus: 'Error',
+        colorStatus: const Color(0xffFFCE20),
+        complexProgress: Assets.imagesVenusdesignsystem),
+    TablesBodyModel(
+        title: 'Uranus',
+        dateTime: '12.Jul.2021',
+        iconStatus: Icons.done,
+        textStatus: 'Approved',
+        colorStatus: const Color(0xff05CD99),
+        complexProgress: Assets.imagesUranus),
+    TablesBodyModel(
+        title: 'Venus Design System',
+        dateTime: '20.May.2021',
+        iconStatus: Icons.priority_high,
+        textStatus: 'Error',
+        colorStatus: const Color(0xffFFCE20),
+        complexProgress: Assets.imagesVenusdesignsystem),
+    TablesBodyModel(
+        title: 'Uranus',
+        dateTime: '12.Jul.2021',
+        iconStatus: Icons.done,
+        textStatus: 'Approved',
+        colorStatus: const Color(0xff05CD99),
+        complexProgress: Assets.imagesUranus),
   ];
 }

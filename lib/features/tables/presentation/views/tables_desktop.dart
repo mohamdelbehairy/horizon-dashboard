@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:horizon/features/tables/presentation/widgets/complex_complex_table.dart';
 import '../../../../core/widgets/custom_app_bar.dart';
+import '../../../../core/widgets/custom_footer.dart';
 import '../../../../core/widgets/custom_scroll_view_dashboard.dart';
 import '../widgets/check_check_table.dart';
 import '../widgets/development_table.dart';
@@ -27,10 +29,11 @@ class TablesDesktop extends StatelessWidget {
           children: [
             Expanded(child: FourColumnTable()),
             SizedBox(width: 16),
-            Expanded(child: SizedBox())
+            Expanded(child: ComplexComplexTable())
           ],
         ),
-        SizedBox(height: 16),
+        SizedBox(height: 32),
+        CustomFooter(),
       ],
     );
   }

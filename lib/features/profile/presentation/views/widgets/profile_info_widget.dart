@@ -13,10 +13,11 @@ class ProfileInfoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBackground(
       backgroundModel: BackgroundModel(
-          height: MediaQuery.sizeOf(context).width > 1700 ||
-                  MediaQuery.sizeOf(context).width < 500
-              ? 360
-              : 300,
+          height: MediaQuery.sizeOf(context).width < 800
+              ? 370
+              : MediaQuery.sizeOf(context).width > 1700
+                  ? 360
+                  : 300,
           child: SingleChildScrollView(
             child: Column(
               children: [

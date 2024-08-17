@@ -33,10 +33,6 @@ class Assets {
   /// assets/images/christian.png
   static const String imagesChristian = "assets/images/christian.png";
 
-  /// Assets for imagesConsumptionperDay
-  /// assets/images/ConsumptionperDay.png
-  static const String imagesConsumptionperDay = "assets/images/ConsumptionperDay.png";
-
   /// Assets for imagesDarkMode
   /// assets/images/dark_mode.svg
   static const String imagesDarkMode = "assets/images/dark_mode.svg";
@@ -101,14 +97,6 @@ class Assets {
   /// assets/images/Large_DoubleChart2.svg
   static const String imagesLargeDoubleChart2 = "assets/images/Large_DoubleChart2.svg";
 
-  /// Assets for imagesLine1
-  /// assets/images/line1.svg
-  static const String imagesLine1 = "assets/images/line1.svg";
-
-  /// Assets for imagesLine2
-  /// assets/images/line2.svg
-  static const String imagesLine2 = "assets/images/line2.svg";
-
   /// Assets for imagesMark
   /// assets/images/mark.svg
   static const String imagesMark = "assets/images/mark.svg";
@@ -116,6 +104,10 @@ class Assets {
   /// Assets for imagesMarket
   /// assets/images/market.svg
   static const String imagesMarket = "assets/images/market.svg";
+
+  /// Assets for imagesMarketplace
+  /// assets/images/marketplace.svg
+  static const String imagesMarketplace = "assets/images/marketplace.svg";
 
   /// Assets for imagesMostEssential
   /// assets/images/most_essential.png
@@ -236,6 +228,18 @@ class Assets {
   /// Assets for imagesUploadIcon
   /// assets/images/upload_icon.svg
   static const String imagesUploadIcon = "assets/images/upload_icon.svg";
+
+  /// Assets for imagesUranus
+  /// assets/images/uranus.svg
+  static const String imagesUranus = "assets/images/uranus.svg";
+
+  /// Assets for imagesVenusdashboardbuilder
+  /// assets/images/venusdashboardbuilder.svg
+  static const String imagesVenusdashboardbuilder = "assets/images/venusdashboardbuilder.svg";
+
+  /// Assets for imagesVenusdesignsystem
+  /// assets/images/venusdesignsystem.svg
+  static const String imagesVenusdesignsystem = "assets/images/venusdesignsystem.svg";
 
   /// Assets for imagesWindows
   /// assets/images/windows.svg
