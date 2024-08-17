@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../kanban/presentation/views/kanban_tablet.dart';
 import '../../../../main_dashboard/presentation/views/main_dashboard_tablet.dart';
 import '../../../../profile/presentation/views/profile_tablet.dart';
+import '../../../../tables/presentation/views/tables_tablet.dart';
 import 'custom_bloc_consumber_drawer.dart';
 import 'custom_drawer.dart';
 
@@ -18,7 +19,7 @@ class TabletDashboard extends StatelessWidget {
           child: CustomBlocConsumerDrawer(
               dashboard: (context) => const MainDashboardTablet(),
               market: (context) => Container(color: Colors.red),
-              tables: (context) => Container(color: Colors.blue),
+              tables: (context) => const TablesTablet(),
               kanban: (context) => const KanbanTablet(),
               profile: (context) => const ProfileTablet()),
         ),
@@ -26,4 +27,5 @@ class TabletDashboard extends StatelessWidget {
     );
   }
 }
+
 
