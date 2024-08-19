@@ -13,7 +13,11 @@ class TableItem extends StatelessWidget {
       child: DataTable(
           showCheckboxColumn: false,
           horizontalMargin: 0.0,
-          columnSpacing: tablesBody.length == 8 ? 100 : 130,
+          columnSpacing: MediaQuery.sizeOf(context).width <= 1150
+              ? 220
+              : tablesBody.length == 8
+                  ? 100
+                  : 130,
           sortAscending: false,
           columns: dataTablesTitle(context, tablesTitle),
           rows: dataTablesBody(context, tablesBody)),

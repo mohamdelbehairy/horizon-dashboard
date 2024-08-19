@@ -18,8 +18,8 @@ class TrendingAndRecentlyItem extends StatelessWidget {
         right: 16,
         left: 16,
         top: 16,
-        bottom: 16,
-        height: 350,
+        bottom: MediaQuery.sizeOf(context).width < 1200 ? 0.0 : 16,
+        height: MediaQuery.sizeOf(context).width < 1200 ? 360 : 350,
         child: Column(
           children: [
             Image.asset(items.backgroundImage, height: 205),
