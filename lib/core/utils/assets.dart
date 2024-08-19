@@ -9,6 +9,10 @@ class Assets {
   /// assets/images/abstract_colors.png
   static const String imagesAbstractColors = "assets/images/abstract_colors.png";
 
+  /// Assets for imagesAbstractHistory
+  /// assets/images/abstract_history.png
+  static const String imagesAbstractHistory = "assets/images/abstract_history.png";
+
   /// Assets for imagesAbstractImage
   /// assets/images/abstract_image.png
   static const String imagesAbstractImage = "assets/images/abstract_image.png";
@@ -57,6 +61,10 @@ class Assets {
   /// assets/images/colorful_heaven.png
   static const String imagesColorfulHeaven = "assets/images/colorful_heaven.png";
 
+  /// Assets for imagesColorfulHistory
+  /// assets/images/colorful_history.png
+  static const String imagesColorfulHistory = "assets/images/colorful_history.png";
+
   /// Assets for imagesColorfulImage
   /// assets/images/colorful_image.png
   static const String imagesColorfulImage = "assets/images/colorful_image.png";
@@ -64,6 +72,10 @@ class Assets {
   /// Assets for imagesCubesArt
   /// assets/images/cubes_art.png
   static const String imagesCubesArt = "assets/images/cubes_art.png";
+
+  /// Assets for imagesCubesHistory
+  /// assets/images/cubes_history.png
+  static const String imagesCubesHistory = "assets/images/cubes_history.png";
 
   /// Assets for imagesDarkMode
   /// assets/images/dark_mode.svg
@@ -93,6 +105,10 @@ class Assets {
   /// assets/images/done.svg
   static const String imagesDone = "assets/images/done.svg";
 
+  /// Assets for imagesDoubleRectangle
+  /// assets/images/double_rectangle.svg
+  static const String imagesDoubleRectangle = "assets/images/double_rectangle.svg";
+
   /// Assets for imagesEat
   /// assets/images/eat.svg
   static const String imagesEat = "assets/images/eat.svg";
@@ -100,6 +116,10 @@ class Assets {
   /// Assets for imagesEthAIbrain
   /// assets/images/eth_aIbrain.png
   static const String imagesEthAIbrain = "assets/images/eth_aIbrain.png";
+
+  /// Assets for imagesEthHistory
+  /// assets/images/eth_history.png
+  static const String imagesEthHistory = "assets/images/eth_history.png";
 
   /// Assets for imagesEthImage
   /// assets/images/eth_image.png
@@ -164,6 +184,10 @@ class Assets {
   /// Assets for imagesMeshGradients
   /// assets/images/mesh_gradients.png
   static const String imagesMeshGradients = "assets/images/mesh_gradients.png";
+
+  /// Assets for imagesMeshHistory
+  /// assets/images/mesh_history.png
+  static const String imagesMeshHistory = "assets/images/mesh_history.png";
 
   /// Assets for imagesMeshImage
   /// assets/images/mesh_image.png
@@ -244,6 +268,10 @@ class Assets {
   /// Assets for imagesStorege
   /// assets/images/storege.svg
   static const String imagesStorege = "assets/images/storege.svg";
+
+  /// Assets for imagesSwipHistory
+  /// assets/images/swip_history.png
+  static const String imagesSwipHistory = "assets/images/swip_history.png";
 
   /// Assets for imagesSwipeCircles
   /// assets/images/swipe_circles.png

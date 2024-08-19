@@ -24,7 +24,8 @@ class TeamMemberListView extends StatelessWidget {
           image: Assets.imagesJason),
     ];
     return Column(
-      children: List.generate(item.length,
+      children: List.generate(
+          item.length,
           (index) => TeamMemberWidget(teamMemberModel: item[index])),
     );
   }

@@ -4,7 +4,7 @@ import 'package:horizon/core/models/background_model.dart';
 import 'package:horizon/core/widgets/custom_background.dart';
 
 import '../../../tables/presentation/widgets/custom_table_widget.dart';
-import '../manager/top_creators/top_creators_cubit.dart';
+import '../manager/top_creators_and_history/top_creators_and_history_cubit.dart';
 import 'nft_marketplace_header.dart';
 
 class TopCreatorsWidget extends StatelessWidget {
@@ -12,7 +12,7 @@ class TopCreatorsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var table = context.read<TopCreatorsCubit>();
+    var table = context.read<TopCreatorsAndHistoryCubit>();
     return CustomBackground(
       backgroundModel: BackgroundModel(
           top: 16,
@@ -21,11 +21,9 @@ class TopCreatorsWidget extends StatelessWidget {
           child: Column(
             children: [
               const NftMarketplaceHeader(text: 'Top Creators'),
-              Container(
-                child: CustomTableWidget(
-                    tablesTitle: table.topCreatorsTitle,
-                    tablesBody: table.topCreatorsBody),
-              ),
+              CustomTableWidget(
+                  tablesTitle: table.topCreatorsTitle,
+                  tablesBody: table.topCreatorsBody),
             ],
           )),
     );
