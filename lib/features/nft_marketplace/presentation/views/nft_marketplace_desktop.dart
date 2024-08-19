@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import '../../../../core/widgets/custom_app_bar.dart';
 import '../../../../core/widgets/custom_scroll_view_dashboard.dart';
 import '../widgets/discover_and_trending_and_recently_section.dart';
+import '../widgets/top_creators_and_history_section.dart';
 
 class NftMarketplaceDesktop extends StatelessWidget {
   const NftMarketplaceDesktop({super.key});
@@ -15,13 +16,11 @@ class NftMarketplaceDesktop extends StatelessWidget {
         CustomAppBar(title: 'NFT Marketplace'),
         SizedBox(height: 16),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(flex: 2, child: DiscoverAndTrendingAndRecentlySection()),
-            Expanded(
-              child: Column(
-                children: [],
-              ),
-            )
+            SizedBox(width: 16),
+            Expanded(child: TopCreatorsAndHistorySection())
           ],
         )
       ],

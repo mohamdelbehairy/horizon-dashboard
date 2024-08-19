@@ -3,11 +3,10 @@ import 'package:horizon/core/utils/function/data_cell_text.dart';
 import 'package:horizon/core/utils/styles.dart';
 import 'package:horizon/core/widgets/custom_svg_picture.dart';
 
-import '../../../features/tables/data/models/tables_model.dart';
 import '../../models/svg_model.dart';
 
 DataRow tableComplexTable(
-    BuildContext context, List<TablesBodyModel> tablesBody, int index) {
+    BuildContext context, List<dynamic> tablesBody, int index) {
   return DataRow(cells: [
     dataCellText(
         context: context,

@@ -1,6 +1,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAbraham
+  /// assets/images/abraham.png
+  static const String imagesAbraham = "assets/images/abraham.png";
+
   /// Assets for imagesAbstractColors
   /// assets/images/abstract_colors.png
   static const String imagesAbstractColors = "assets/images/abstract_colors.png";
@@ -17,9 +21,17 @@ class Assets {
   /// assets/images/america.png
   static const String imagesAmerica = "assets/images/america.png";
 
+  /// Assets for imagesAndreea
+  /// assets/images/andreea.png
+  static const String imagesAndreea = "assets/images/andreea.png";
+
   /// Assets for imagesAndroid
   /// assets/images/android.svg
   static const String imagesAndroid = "assets/images/android.svg";
+
+  /// Assets for imagesApe
+  /// assets/images/ape.png
+  static const String imagesApe = "assets/images/ape.png";
 
   /// Assets for imagesApple
   /// assets/images/apple.svg
@@ -121,9 +133,21 @@ class Assets {
   /// assets/images/kanban.svg
   static const String imagesKanban = "assets/images/kanban.svg";
 
+  /// Assets for imagesKarlwill
+  /// assets/images/karlwill.png
+  static const String imagesKarlwill = "assets/images/karlwill.png";
+
   /// Assets for imagesLargeDoubleChart2
   /// assets/images/Large_DoubleChart2.svg
   static const String imagesLargeDoubleChart2 = "assets/images/Large_DoubleChart2.svg";
+
+  /// Assets for imagesLeon
+  /// assets/images/leon.png
+  static const String imagesLeon = "assets/images/leon.png";
+
+  /// Assets for imagesMaddison
+  /// assets/images/maddison.png
+  static const String imagesMaddison = "assets/images/maddison.png";
 
   /// Assets for imagesMark
   /// assets/images/mark.svg
@@ -200,6 +224,10 @@ class Assets {
   /// Assets for imagesSignin
   /// assets/images/signin.svg
   static const String imagesSignin = "assets/images/signin.svg";
+
+  /// Assets for imagesSimmmple
+  /// assets/images/simmmple.png
+  static const String imagesSimmmple = "assets/images/simmmple.png";
 
   /// Assets for imagesSlowMotionVideo
   /// assets/images/slow_motion_video.svg
@@ -280,6 +308,10 @@ class Assets {
   /// Assets for imagesUranus
   /// assets/images/uranus.svg
   static const String imagesUranus = "assets/images/uranus.svg";
+
+  /// Assets for imagesVenus
+  /// assets/images/venus.png
+  static const String imagesVenus = "assets/images/venus.png";
 
   /// Assets for imagesVenusdashboardbuilder
   /// assets/images/venusdashboardbuilder.svg

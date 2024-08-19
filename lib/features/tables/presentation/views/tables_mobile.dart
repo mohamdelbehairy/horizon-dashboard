@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:horizon/core/widgets/custom_footer.dart';
 
 import '../../../../core/widgets/custom_app_bar.dart';
-import 'widgets/check_check_table.dart';
-import 'widgets/complex_complex_table.dart';
-import 'widgets/development_table.dart';
-import 'widgets/four_column_table.dart';
+import '../widgets/check_check_table.dart';
+import '../widgets/complex_complex_table.dart';
+import '../widgets/development_table.dart';
+import '../widgets/four_column_table.dart';
 
 class TablesMobile extends StatelessWidget {
   const TablesMobile({super.key});

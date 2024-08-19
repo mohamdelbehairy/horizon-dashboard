@@ -7,6 +7,7 @@ import 'package:horizon/features/kanban/presentation/manager/kanban/kanban_cubit
 import 'package:horizon/features/profile/presentation/manager/switch/switch_cubit.dart';
 import 'package:horizon/features/tables/presentation/manager/tables/tables_cubit.dart';
 
+import 'features/nft_marketplace/presentation/manager/top_creators/top_creators_cubit.dart';
 import 'features/nft_marketplace/presentation/manager/trending_and_recently/trending_and_recently_cubit.dart';
 
 void main() {
@@ -27,7 +28,8 @@ class Horizon extends StatelessWidget {
         BlocProvider(create: (context) => SwitchCubit()),
         BlocProvider(create: (context) => KanbanCubit()),
         BlocProvider(create: (context) => TablesCubit()),
-        BlocProvider(create: (context) => TrendingAndRecentlyCubit())
+        BlocProvider(create: (context) => TrendingAndRecentlyCubit()),
+        BlocProvider(create: (context) => TopCreatorsCubit())
       ],
       child: MaterialApp(
         locale: DevicePreview.locale(context),

@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
-import 'package:horizon/features/tables/data/models/tables_model.dart';
 
 import 'data_cell_image.dart';
 import 'data_cell_text.dart';
 
-DataRow tableDefaultTable(BuildContext context, List<TablesBodyModel> tablesBody, int index) {
+DataRow tableDefaultTable(
+    BuildContext context, List<dynamic> tablesBody, int index) {
   return DataRow(cells: [
     dataCellText(
         context: context,
