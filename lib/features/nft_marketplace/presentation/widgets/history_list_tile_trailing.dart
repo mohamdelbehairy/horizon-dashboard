@@ -26,14 +26,8 @@ class HistoryListTileTraling extends StatelessWidget {
                 FittedBox(
                     fit: BoxFit.scaleDown,
                     child: Text(historyModel.trailingText1,
-                        style: Styles.bold16(context)))
-              ],
-            ),
-          ),
-          const SizedBox(width: 32),
-          Flexible(
-            child: Row(
-              children: [
+                        style: Styles.bold16(context))),
+                const SizedBox(width: 8),
                 FittedBox(
                   fit: BoxFit.scaleDown,
                   child: Text(historyModel.trailingText2,
@@ -42,7 +36,7 @@ class HistoryListTileTraling extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: 12),
+          if (MediaQuery.sizeOf(context).width > 800) const SizedBox(width: 12),
         ],
       ),
     );

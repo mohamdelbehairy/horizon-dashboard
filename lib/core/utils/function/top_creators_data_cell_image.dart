@@ -9,7 +9,10 @@ DataCell topCreatorsDataCellImage(
     children: [
       Image.asset(image),
       const SizedBox(width: 8),
-      Text(text, style: Styles.bold14(context)),
+      Text(text,
+          style: MediaQuery.sizeOf(context).width > 800
+              ? Styles.bold14(context)
+              : Styles.bold14(context).copyWith(fontSize: 26)),
     ],
   ));
 }

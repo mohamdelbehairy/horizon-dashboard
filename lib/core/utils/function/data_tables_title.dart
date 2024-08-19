@@ -10,7 +10,10 @@ List<DataColumn> dataTablesTitle(
   return List.generate(tablesTitle.length, (index) {
     return DataColumn(
         label: tablesTitle.length == 3
-            ? Text(tablesTitle[index],style: Styles.medium14(context))
+            ? Text(tablesTitle[index],
+                style: MediaQuery.sizeOf(context).width > 800
+                    ? Styles.medium14(context)
+                    : Styles.medium14(context).copyWith(fontSize: 20))
             : CustomSvgPicture(
                 svg: SvgModel(
                     image: Assets.imagesTablesTitle,

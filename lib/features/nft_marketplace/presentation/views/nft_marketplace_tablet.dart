@@ -17,7 +17,7 @@ class NftMarketplaceTablet extends StatelessWidget {
       const SizedBox(height: 16),
       const DiscoverAndTrendingAndRecentlySection(),
       const SizedBox(height: 16),
-      if (MediaQuery.sizeOf(context).width > 1150)
+      if (MediaQuery.sizeOf(context).width > 1100)
         const Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -26,9 +26,9 @@ class NftMarketplaceTablet extends StatelessWidget {
             Expanded(child: TopCreatorsWidget()),
           ],
         ),
-      if (MediaQuery.sizeOf(context).width < 1150) const HistoryWidget(),
-      if (MediaQuery.sizeOf(context).width < 1150) const SizedBox(height: 16),
-      if (MediaQuery.sizeOf(context).width < 1150) const TopCreatorsWidget(),
+      if (MediaQuery.sizeOf(context).width < 1100) const HistoryWidget(),
+      if (MediaQuery.sizeOf(context).width < 1100) const SizedBox(height: 16),
+      if (MediaQuery.sizeOf(context).width < 1100) const TopCreatorsWidget(),
       const SizedBox(height: 16),
       const CustomFooter(),
       const SizedBox(height: 16),

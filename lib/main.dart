@@ -12,7 +12,7 @@ import 'features/nft_marketplace/presentation/manager/trending_and_recently/tren
 
 void main() {
   runApp(DevicePreview(
-    enabled: false,
+    enabled: true,
     builder: (context) => const Horizon(),
   ));
 }
