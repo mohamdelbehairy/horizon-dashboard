@@ -1,6 +1,14 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAbstractColors
+  /// assets/images/abstract_colors.png
+  static const String imagesAbstractColors = "assets/images/abstract_colors.png";
+
+  /// Assets for imagesAbstractImage
+  /// assets/images/abstract_image.png
+  static const String imagesAbstractImage = "assets/images/abstract_image.png";
+
   /// Assets for imagesAdela
   /// assets/images/adela.png
   static const String imagesAdela = "assets/images/adela.png";
@@ -33,6 +41,18 @@ class Assets {
   /// assets/images/christian.png
   static const String imagesChristian = "assets/images/christian.png";
 
+  /// Assets for imagesColorfulHeaven
+  /// assets/images/colorful_heaven.png
+  static const String imagesColorfulHeaven = "assets/images/colorful_heaven.png";
+
+  /// Assets for imagesColorfulImage
+  /// assets/images/colorful_image.png
+  static const String imagesColorfulImage = "assets/images/colorful_image.png";
+
+  /// Assets for imagesCubesArt
+  /// assets/images/cubes_art.png
+  static const String imagesCubesArt = "assets/images/cubes_art.png";
+
   /// Assets for imagesDarkMode
   /// assets/images/dark_mode.svg
   static const String imagesDarkMode = "assets/images/dark_mode.svg";
@@ -64,6 +84,14 @@ class Assets {
   /// Assets for imagesEat
   /// assets/images/eat.svg
   static const String imagesEat = "assets/images/eat.svg";
+
+  /// Assets for imagesEthAIbrain
+  /// assets/images/eth_aIbrain.png
+  static const String imagesEthAIbrain = "assets/images/eth_aIbrain.png";
+
+  /// Assets for imagesEthImage
+  /// assets/images/eth_image.png
+  static const String imagesEthImage = "assets/images/eth_image.png";
 
   /// Assets for imagesFiles
   /// assets/images/files.svg
@@ -109,6 +137,14 @@ class Assets {
   /// assets/images/marketplace.svg
   static const String imagesMarketplace = "assets/images/marketplace.svg";
 
+  /// Assets for imagesMeshGradients
+  /// assets/images/mesh_gradients.png
+  static const String imagesMeshGradients = "assets/images/mesh_gradients.png";
+
+  /// Assets for imagesMeshImage
+  /// assets/images/mesh_image.png
+  static const String imagesMeshImage = "assets/images/mesh_image.png";
+
   /// Assets for imagesMostEssential
   /// assets/images/most_essential.png
   static const String imagesMostEssential = "assets/images/most_essential.png";
@@ -116,6 +152,10 @@ class Assets {
   /// Assets for imagesNewTask
   /// assets/images/new_task.svg
   static const String imagesNewTask = "assets/images/new_task.svg";
+
+  /// Assets for imagesNftMarketHeader
+  /// assets/images/nft_market_header.png
+  static const String imagesNftMarketHeader = "assets/images/nft_market_header.png";
 
   /// Assets for imagesNotification
   /// assets/images/notification.svg
@@ -176,6 +216,14 @@ class Assets {
   /// Assets for imagesStorege
   /// assets/images/storege.svg
   static const String imagesStorege = "assets/images/storege.svg";
+
+  /// Assets for imagesSwipeCircles
+  /// assets/images/swipe_circles.png
+  static const String imagesSwipeCircles = "assets/images/swipe_circles.png";
+
+  /// Assets for imagesSwipeImage
+  /// assets/images/swipe_image.png
+  static const String imagesSwipeImage = "assets/images/swipe_image.png";
 
   /// Assets for imagesTables
   /// assets/images/tables.svg

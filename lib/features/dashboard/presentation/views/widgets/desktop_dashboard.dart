@@ -3,6 +3,7 @@ import 'package:horizon/features/dashboard/presentation/views/widgets/custom_blo
 import 'package:horizon/features/kanban/presentation/views/kanban_desktop.dart';
 import 'package:horizon/features/profile/presentation/views/profile_desktop.dart';
 import 'package:horizon/features/tables/presentation/views/tables_desktop.dart';
+import '../../../../nft_marketplace/presentation/views/nft_marketplace_desktop.dart';
 import 'custom_drawer.dart';
 import '../../../../main_dashboard/presentation/views/main_dashboard_desktop.dart';
 
@@ -17,7 +18,7 @@ class DesktopDashboard extends StatelessWidget {
         Expanded(
           child: CustomBlocConsumerDrawer(
               dashboard: (context) => const MainDashboardDesktop(),
-              market: (context) => Container(color: Colors.red),
+              market: (context) => const NftMarketplaceDesktop(),
               tables: (context) => const TablesDesktop(),
               kanban: (context) => const KanbanDesktop(),
               profile: (context) => const ProfileDesktop()),
@@ -26,4 +27,3 @@ class DesktopDashboard extends StatelessWidget {
     );
   }
 }
-

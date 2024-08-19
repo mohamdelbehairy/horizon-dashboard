@@ -11,7 +11,7 @@ class CustomScrollViewDashboard extends StatelessWidget {
         SliverFillRemaining(
           hasScrollBody: false,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: children),
