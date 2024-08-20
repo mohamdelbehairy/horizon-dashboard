@@ -42,7 +42,10 @@ class TrendingAndRecentlyItem extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 4, right: 4, top: 8),
+                padding: EdgeInsets.only(
+                    left: 4,
+                    right: 4,
+                    top: MediaQuery.sizeOf(context).width <= 800 ? 4 : 8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -54,7 +57,8 @@ class TrendingAndRecentlyItem extends StatelessWidget {
                     )),
                     const SizedBox(width: 8),
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(70),
+                      borderRadius: BorderRadius.circular(
+                          MediaQuery.sizeOf(context).width <= 1300 ? 12 : 70),
                       child: MaterialButton(
                           height: 40,
                           minWidth: 106,
