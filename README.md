@@ -1,16 +1,14 @@
-# horizon
+# Horizon
 
-A new Flutter project.
+#### Horizon is a responsive dashboard UI application built with Flutter, designed to work seamlessly across all platforms. It uses the MVVM (Model-View-ViewModel) pattern to ensure an organized and scalable architecture.
 
-## Getting Started
+## Features
+- #### Responsive UI: Horizon is crafted to work smoothly across all platforms including web, mobile, and tablet devices, ensuring a consistent user experience across different screen sizes.
+- #### MVVM Architecture: The MVVM pattern is utilized to separate the business logic from the user interface, making the application more maintainable and scalable.
+- #### Modern Design: The app features a contemporary and user-friendly interface, focusing on an effective and engaging user experience.
+- #### Firebase Integration: Horizon is connected to Firebase, which provides reliable hosting and other backend services. This integration ensures high performance and availability of the application.
 
-This project is a starting point for a Flutter application.
+## Live Demo
+#### You can view a live demo of Horizon at https://horizon-3b275.web.app/
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Desktop Version
