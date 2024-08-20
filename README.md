@@ -13,5 +13,7 @@
 
 #### Preview for Desktop
 https://github.com/user-attachments/assets/e5957121-4435-4848-b959-c22dab25b29a
+#### Preview for Mobile
+https://github.com/user-attachments/assets/bd859779-5393-4bb4-ac0c-1e5d4ad0e71d
 
 
