@@ -14,7 +14,7 @@ class ProfileInfoWidget extends StatelessWidget {
     return CustomBackground(
       backgroundModel: BackgroundModel(
           height: MediaQuery.sizeOf(context).width < 800
-              ? 370
+              ? null
               : MediaQuery.sizeOf(context).width > 1700
                   ? 360
                   : 300,

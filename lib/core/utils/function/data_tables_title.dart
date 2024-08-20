@@ -18,6 +18,6 @@ List<DataColumn> dataTablesTitle(
                 svg: SvgModel(
                     image: Assets.imagesTablesTitle,
                     hight:
-                        MediaQuery.sizeOf(context).width < 800 ? 40 : null)));
+                        MediaQuery.sizeOf(context).width < 800 ? 50 : null)));
   });
 }

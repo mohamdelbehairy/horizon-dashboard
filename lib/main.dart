@@ -1,4 +1,5 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:horizon/features/dashboard/presentation/manager/drawer/drawer_cubit.dart';
@@ -6,13 +7,18 @@ import 'package:horizon/features/dashboard/presentation/views/dashboard_view.dar
 import 'package:horizon/features/kanban/presentation/manager/kanban/kanban_cubit.dart';
 import 'package:horizon/features/profile/presentation/manager/switch/switch_cubit.dart';
 import 'package:horizon/features/tables/presentation/manager/tables/tables_cubit.dart';
+import 'package:horizon/firebase_options.dart';
 
 import 'features/nft_marketplace/presentation/manager/top_creators_and_history/top_creators_and_history_cubit.dart';
 import 'features/nft_marketplace/presentation/manager/trending_and_recently/trending_and_recently_cubit.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(DevicePreview(
-    enabled: true,
+    enabled: false,
     builder: (context) => const Horizon(),
   ));
 }

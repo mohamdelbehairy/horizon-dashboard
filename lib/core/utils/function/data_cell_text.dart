@@ -16,7 +16,7 @@ DataCell dataCellText(
         const SizedBox(width: 12),
       Text(text,
           style: MediaQuery.sizeOf(context).width < 800
-              ? Styles.bold20(context).copyWith(fontSize: 22)
+              ? Styles.bold20(context).copyWith(fontSize: 28)
               : textStatus != null
                   ? Styles.bold16(context)
                   : Styles.bold14(context)),
